@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airfryer Fácil – +60 Recetas Sencillas para Freidora de Aire</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5646155379510780" crossorigin="anonymous"></script>
+<style>
+:root{
+  --cream:#fdf6ec;--warm:#fffbf5;--terra:#c8603a;--terra-l:#e07a52;--terra-d:#a04a28;
+  --sage:#a8b89a;--brown:#5c3d2e;--gold:#c9932a;--gold-d:#a87520;
+  --tx:#2c1f14;--tx-m:#5c4033;--tx-l:#8a7060;--bd:#e8d5c0;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--cream);color:var(--tx);font-family:'DM Sans',sans-serif;overflow-x:hidden;}
+img{display:block;}
+.page{display:none;}
+.page.active{display:block;animation:pin .35s ease both;}
+@keyframes pin{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+@keyframes up{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+
+/* ——— HEADER ——— */
+header{
+  background:var(--warm);border-bottom:2px solid var(--bd);padding:0 2rem;
+  position:sticky;top:0;z-index:300;display:flex;align-items:center;
+  justify-content:space-between;height:66px;box-shadow:0 2px 14px rgba(92,61,46,.07);
+}
+.logo{display:flex;align-items:center;gap:.55rem;cursor:pointer;}
+.logo-icon{width:36px;height:36px;background:var(--terra);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:2px 2px 0 var(--terra-d);}
+.logo-txt{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--brown);font-weight:700;}
+.logo-txt span{color:var(--terra);}
+nav{display:flex;gap:1.6rem;align-items:center;flex-wrap:wrap;}
+nav a{font-size:.88rem;font-weight:500;color:var(--tx-m);cursor:pointer;transition:color .2s;white-space:nowrap;}
+nav a:hover{color:var(--terra);}
+.nav-cta{background:var(--terra);color:white!important;padding:.4rem 1.1rem;border-radius:50px;transition:background .2s!important;}
+.nav-cta:hover{background:var(--terra-d)!important;}
+
+/* ——— HERO ——— */
+.hero{min-height:84vh;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;}
+.hero-l{padding:4.5rem 4rem 4.5rem 5rem;display:flex;flex-direction:column;justify-content:center;}
+.hero-tag{display:inline-block;background:var(--sage);color:white;font-size:.73rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.38rem .9rem;border-radius:50px;margin-bottom:1.4rem;animation:up .5s ease both;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,4vw,3.8rem);line-height:1.13;color:var(--brown);margin-bottom:1.3rem;animation:up .5s .1s ease both;}
+.hero h1 em{color:var(--terra);font-style:italic;}
+.hero-desc{font-family:'Lora',serif;font-size:1.02rem;line-height:1.85;color:var(--tx-l);max-width:420px;margin-bottom:2.3rem;animation:up .5s .2s ease both;}
+.hero-btns{display:flex;gap:.9rem;animation:up .5s .3s ease both;}
+.btn-p{background:var(--terra);color:white;padding:.85rem 1.8rem;border-radius:50px;font-size:.93rem;font-weight:600;cursor:pointer;box-shadow:3px 3px 0 var(--terra-d);transition:transform .15s,box-shadow .15s;border:none;font-family:'DM Sans',sans-serif;}
+.btn-p:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--terra-d);}
+.btn-o{color:var(--brown);padding:.85rem 1.4rem;border-radius:50px;font-size:.93rem;font-weight:500;cursor:pointer;border:2px solid var(--bd);transition:all .2s;background:none;font-family:'DM Sans',sans-serif;}
+.btn-o:hover{border-color:var(--terra);color:var(--terra);}
+.hero-stats{display:flex;gap:2.2rem;margin-top:2.8rem;padding-top:2rem;border-top:1px solid var(--bd);animation:up .5s .4s ease both;}
+.s-num{font-family:'Playfair Display',serif;font-size:1.75rem;color:var(--terra);font-weight:700;display:block;}
+.s-lbl{font-size:.72rem;color:var(--tx-l);text-transform:uppercase;letter-spacing:.08em;}
+.hero-r{background:linear-gradient(135deg,#d4845a,#b5552e 50%,#8a3a18);position:relative;overflow:hidden;}
+.hero-r::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");}
+.food-grid{position:absolute;inset:18px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;}
+.food-card{background:rgba(255,255,255,.13);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:3rem;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:transform .25s,background .25s;animation:float 4s ease-in-out infinite;}
+.food-card:nth-child(2){animation-delay:1s;}
+.food-card:nth-child(3){animation-delay:2s;}
+.food-card:nth-child(4){animation-delay:.5s;}
+.food-card:hover{transform:scale(1.06);background:rgba(255,255,255,.22);}
+.food-lbl{font-size:.7rem;color:rgba(255,255,255,.85);margin-top:.35rem;font-weight:500;text-align:center;padding:0 .3rem;}
+
+/* ——— STRIP ——— */
+.strip{background:var(--brown);padding:.85rem 2rem;display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;}
+.strip-i{display:flex;align-items:center;gap:.45rem;font-size:.8rem;color:rgba(255,255,255,.85);font-weight:500;}
+
+/* ——— RECIPE BROWSER ——— */
+.browser{padding:4rem 2rem 5rem;max-width:1280px;margin:0 auto;}
+.browser-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem;flex-wrap:wrap;gap:1rem;}
+.browser-title{font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--brown);}
+.search-box{display:flex;align-items:center;gap:.5rem;background:var(--warm);border:1.5px solid var(--bd);border-radius:50px;padding:.5rem 1.1rem;min-width:240px;}
+.search-box input{border:none;background:none;font-family:'DM Sans',sans-serif;font-size:.88rem;color:var(--tx);outline:none;width:100%;}
+.search-box span{color:var(--tx-l);font-size:1rem;}
+
+/* CATEGORY TABS */
+.cat-tabs{display:flex;gap:.5rem;margin-bottom:2rem;flex-wrap:wrap;}
+.cat-tab{padding:.45rem 1.1rem;border-radius:50px;border:1.5px solid var(--bd);background:var(--warm);font-size:.82rem;font-weight:500;color:var(--tx-m);cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:.35rem;white-space:nowrap;}
+.cat-tab:hover{border-color:var(--terra);color:var(--terra);}
+.cat-tab.active{background:var(--terra);color:white;border-color:var(--terra);}
+
+/* RECIPE GRID */
+.recipe-count{font-size:.82rem;color:var(--tx-l);margin-bottom:1.2rem;}
+.recipes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;}
+.rc{background:var(--warm);border-radius:18px;overflow:hidden;border:1px solid var(--bd);transition:transform .25s,box-shadow .25s;cursor:pointer;animation:up .3s ease both;}
+.rc:hover{transform:translateY(-5px);box-shadow:0 18px 36px rgba(92,61,46,.12);}
+.rc-thumb{height:150px;display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;flex-shrink:0;}
+.rc-body{padding:1.1rem 1.2rem 1.3rem;}
+.rc-cats{display:flex;gap:.4rem;margin-bottom:.5rem;flex-wrap:wrap;}
+.rc-cat{font-size:.65rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--tx-l);}
+.rc-title{font-family:'Playfair Display',serif;font-size:1rem;color:var(--brown);margin-bottom:.4rem;line-height:1.3;}
+.rc-meta{display:flex;gap:.8rem;margin-bottom:.7rem;}
+.rc-m{font-size:.72rem;color:var(--tx-l);}
+.rc-tags{display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.9rem;}
+.tag{background:var(--cream);color:var(--tx-m);font-size:.67rem;padding:.18rem .55rem;border-radius:50px;border:1px solid var(--bd);font-weight:500;}
+.rc-foot{display:flex;align-items:center;justify-content:space-between;}
+.ver-btn{background:var(--terra);color:white;border:none;padding:.48rem 1.1rem;border-radius:50px;font-size:.79rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background .2s;display:flex;align-items:center;gap:.25rem;}
+.ver-btn:hover{background:var(--terra-d);}
+.afil-dot{background:var(--gold);color:white;font-size:.62rem;font-weight:700;padding:.18rem .5rem;border-radius:4px;}
+
+/* thumb color classes */
+.th-a{background:linear-gradient(135deg,#f4c574,#e8913a);}
+.th-b{background:linear-gradient(135deg,#f4a088,#c84820);}
+.th-c{background:linear-gradient(135deg,#a8d4f0,#4a8fc8);}
+.th-d{background:linear-gradient(135deg,#b8d4a0,#7a9e60);}
+.th-e{background:linear-gradient(135deg,#f9d86c,#c9932a);}
+.th-f{background:linear-gradient(135deg,#c8a4d8,#7a4a9e);}
+.th-g{background:linear-gradient(135deg,#fde68a,#f59e0b);}
+
+/* ——— AFFILIATE STRIP ——— */
+.afil-strip{background:var(--warm);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:3.5rem 2rem;}
+.afil-inner{max-width:1280px;margin:0 auto;}
+.sh{text-align:center;margin-bottom:2.5rem;}
+.stag{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--terra);margin-bottom:.6rem;}
+.st{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,2.8vw,2.4rem);color:var(--brown);}
+.st em{color:var(--terra);font-style:italic;}
+.ss{font-family:'Lora',serif;font-size:.95rem;color:var(--tx-l);margin-top:.6rem;}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem;}
+.prod-c{background:var(--cream);border-radius:14px;padding:1.6rem 1.3rem;border:1px solid var(--bd);text-align:center;transition:transform .2s,box-shadow .2s;position:relative;}
+.prod-c:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(92,61,46,.1);}
+.top-l{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--terra);color:white;font-size:.65rem;font-weight:700;padding:.22rem .7rem;border-radius:50px;white-space:nowrap;}
+.p-em{font-size:3rem;margin-bottom:.6rem;display:block;}
+.p-nm{font-family:'Playfair Display',serif;font-size:.95rem;color:var(--brown);margin-bottom:.3rem;}
+.p-ds{font-size:.77rem;color:var(--tx-l);line-height:1.5;margin-bottom:.7rem;}
+.p-pr{font-size:1rem;font-weight:700;color:var(--terra);margin-bottom:.8rem;}
+.btn-az{display:block;background:var(--gold);color:white;padding:.5rem;border-radius:7px;font-size:.77rem;font-weight:700;cursor:pointer;border:none;width:100%;font-family:'DM Sans',sans-serif;transition:background .2s;}
+.btn-az:hover{background:var(--gold-d);}
+.dscl{text-align:center;margin-top:1.8rem;font-size:.71rem;color:var(--tx-l);font-style:italic;padding:.8rem 1rem;background:rgba(200,160,100,.08);border-radius:8px;border:1px solid var(--bd);line-height:1.6;}
+
+/* ——— TIPS ——— */
+.tips-s{padding:4rem 2rem;max-width:1280px;margin:0 auto;}
+.tips-g{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;}
+.tip-c{padding:1.6rem;border-radius:14px;border:1px solid var(--bd);position:relative;overflow:hidden;background:var(--warm);}
+.tip-c::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--terra);}
+.tip-n{font-family:'Playfair Display',serif;font-size:2.5rem;color:var(--bd);font-weight:700;line-height:1;margin-bottom:.3rem;}
+.tip-t{font-family:'Playfair Display',serif;font-size:.98rem;color:var(--brown);margin-bottom:.35rem;}
+.tip-d{font-size:.83rem;color:var(--tx-l);line-height:1.7;font-family:'Lora',serif;}
+
+/* ——— NEWSLETTER ——— */
+.nl{background:linear-gradient(135deg,var(--brown),var(--terra-d));padding:4.5rem 2rem;text-align:center;}
+.nl h2{font-family:'Playfair Display',serif;font-size:2.1rem;color:white;margin-bottom:.6rem;}
+.nl p{color:rgba(255,255,255,.7);font-family:'Lora',serif;font-size:.95rem;margin-bottom:1.8rem;}
+.nl-f{display:flex;gap:.6rem;justify-content:center;max-width:420px;margin:0 auto;}
+.nl-f input{flex:1;padding:.8rem 1.2rem;border-radius:50px;border:none;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--tx);outline:none;}
+.nl-f button{background:var(--terra-l);color:white;border:none;padding:.8rem 1.5rem;border-radius:50px;font-size:.86rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;transition:background .2s;}
+.nl-f button:hover{background:white;color:var(--terra);}
+
+/* ——— FOOTER ——— */
+footer{background:var(--tx);color:rgba(255,255,255,.5);padding:2rem;text-align:center;font-size:.78rem;line-height:1.9;}
+footer strong{color:rgba(255,255,255,.85);}
+footer a{color:var(--terra-l);text-decoration:none;}
+
+/* ——— RECIPE DETAIL ——— */
+.rd-wrap{max-width:920px;margin:0 auto;padding:2.5rem 2rem 5rem;}
+.back-btn{display:inline-flex;align-items:center;gap:.45rem;color:var(--terra);font-weight:600;font-size:.88rem;cursor:pointer;padding:.55rem 1.1rem;border:2px solid var(--bd);border-radius:50px;background:white;transition:all .2s;margin-bottom:2rem;}
+.back-btn:hover{border-color:var(--terra);background:var(--terra);color:white;}
+.rd-hero{border-radius:22px;height:280px;display:flex;align-items:center;justify-content:center;font-size:8rem;position:relative;overflow:hidden;margin-bottom:2rem;}
+.rd-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.45),transparent);}
+.rd-hero-title{position:absolute;bottom:1.6rem;left:2rem;right:2rem;}
+.rd-hero-title h1{font-family:'Playfair Display',serif;font-size:2rem;color:white;line-height:1.2;text-shadow:0 2px 8px rgba(0,0,0,.4);}
+.rd-pills{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.8rem;}
+.pill{background:var(--warm);border:1px solid var(--bd);border-radius:50px;padding:.4rem .9rem;font-size:.8rem;font-weight:500;color:var(--tx-m);}
+.rd-intro{font-family:'Lora',serif;font-size:.98rem;color:var(--tx-l);line-height:1.82;margin-bottom:2.2rem;padding:1.2rem 1.5rem;background:var(--warm);border-radius:14px;border-left:4px solid var(--terra);}
+.rd-cols{display:grid;grid-template-columns:1fr 1.9fr;gap:2.5rem;align-items:start;}
+.ing-card{background:var(--warm);border-radius:18px;padding:1.6rem;border:1px solid var(--bd);position:sticky;top:80px;}
+.ing-card h3{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--brown);margin-bottom:1rem;padding-bottom:.7rem;border-bottom:1px solid var(--bd);}
+.ing-i{display:flex;align-items:center;gap:.6rem;padding:.5rem 0;border-bottom:1px solid var(--bd);}
+.ing-i:last-of-type{border-bottom:none;}
+.dot{width:7px;height:7px;background:var(--terra);border-radius:50%;flex-shrink:0;}
+.ing-a{font-weight:600;color:var(--brown);font-size:.84rem;min-width:64px;}
+.ing-n{font-size:.84rem;color:var(--tx-m);flex:1;}
+.ing-buy{background:var(--gold);color:white;border:none;padding:.25rem .6rem;border-radius:6px;font-size:.68rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;text-decoration:none;display:inline-block;transition:background .2s;}
+.ing-buy:hover{background:var(--gold-d);}
+.afil-note{margin-top:1.2rem;font-size:.7rem;color:var(--tx-l);font-style:italic;line-height:1.5;text-align:center;padding:.7rem;background:rgba(200,160,100,.07);border-radius:8px;}
+.steps-s h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--brown);margin-bottom:1.3rem;}
+.step{display:flex;gap:1rem;margin-bottom:1.6rem;align-items:flex-start;}
+.sn{width:36px;height:36px;background:var(--terra);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.88rem;flex-shrink:0;box-shadow:2px 2px 0 var(--terra-d);}
+.st-t{font-family:'Playfair Display',serif;font-size:.97rem;color:var(--brown);margin-bottom:.3rem;}
+.st-d{font-family:'Lora',serif;font-size:.86rem;color:var(--tx-l);line-height:1.75;}
+.step-tip{margin-top:.45rem;background:rgba(200,96,58,.07);border-left:3px solid var(--terra);padding:.45rem .75rem;border-radius:0 7px 7px 0;font-size:.78rem;color:var(--tx-m);font-style:italic;}
+.more-r{margin-top:3rem;padding:1.8rem;background:var(--warm);border-radius:18px;border:1px solid var(--bd);}
+.more-r h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--brown);margin-bottom:.4rem;text-align:center;}
+.more-r p{font-size:.83rem;color:var(--tx-l);text-align:center;margin-bottom:1.3rem;font-family:'Lora',serif;}
+.mini-g{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;}
+.mini-c{background:var(--cream);border-radius:10px;border:1px solid var(--bd);cursor:pointer;transition:transform .2s,box-shadow .2s;overflow:hidden;}
+.mini-c:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(92,61,46,.1);}
+.mini-th{height:70px;display:flex;align-items:center;justify-content:center;font-size:2.2rem;}
+.mini-nm{padding:.5rem .4rem;font-size:.73rem;font-weight:600;color:var(--brown);font-family:'Playfair Display',serif;text-align:center;line-height:1.2;}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .hero{grid-template-columns:1fr;}
+  .hero-r{height:240px;}
+  .hero-l{padding:3rem 1.5rem;}
+  .prod-grid{grid-template-columns:repeat(2,1fr);}
+  .tips-g{grid-template-columns:repeat(2,1fr);}
+  .rd-cols{grid-template-columns:1fr;}
+  .ing-card{position:static;}
+  .mini-g{grid-template-columns:repeat(2,1fr);}
+  nav .nav-cta{display:none;}
+}
+@media(max-width:640px){
+  .recipes-grid{grid-template-columns:1fr 1fr;}
+  .tips-g{grid-template-columns:1fr;}
+  nav a:not(.nav-cta){display:none;}
+}
+@media(max-width:400px){
+  .recipes-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo" onclick="goHome()">
+    <div class="logo-icon">🌀</div>
+    <span class="logo-txt">Airfryer <span>Fácil</span></span>
+  </div>
+  <nav>
+    <a onclick="goHome()">Inicio</a>
+    <a onclick="goHome();setTimeout(()=>sid('recetas'),80)">Recetas</a>
+    <a onclick="goHome();setTimeout(()=>sid('equipamiento'),80)">Equipamiento</a>
+    <a onclick="goHome();setTimeout(()=>sid('recetas'),80)" class="nav-cta">+60 Recetas →</a>
+  </nav>
+</header>
+
+<!-- ===== HOME ===== -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-l">
+      <span class="hero-tag">🔥 Más de 60 recetas para freidora de aire</span>
+      <h1>Todo el sabor,<br><em>sin complicaciones</em></h1>
+      <p class="hero-desc">Recetas sencillas y deliciosas para tu airfryer. Ingredientes con enlace directo a Amazon para que tengas todo listo.</p>
+      <div class="hero-btns">
+        <button class="btn-p" onclick="sid('recetas')">Ver todas las recetas 🍽️</button>
+        <button class="btn-o" onclick="sid('equipamiento')">Equipamiento</button>
+      </div>
+      <div class="hero-stats">
+        <div><span class="s-num">+60</span><span class="s-lbl">Recetas</span></div>
+        <div><span class="s-num">15 min</span><span class="s-lbl">Tiempo medio</span></div>
+        <div><span class="s-num">7</span><span class="s-lbl">Categorías</span></div>
+      </div>
+    </div>
+    <div class="hero-r">
+      <div class="food-grid">
+        <div class="food-card" onclick="openR('alitas-bbq')">🍗<span class="food-lbl">Pollo crujiente</span></div>
+        <div class="food-card" onclick="openR('patatas-gajo')">🍟<span class="food-lbl">Patatas gajo</span></div>
+        <div class="food-card" onclick="openR('salmon-limon')">🐟<span class="food-lbl">Salmón al limón</span></div>
+        <div class="food-card" onclick="openR('donuts')">🍩<span class="food-lbl">Donuts sin freír</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="strip-i">✅ Sin aceite añadido</div>
+    <div class="strip-i">⏱️ Listo en menos de 20 min</div>
+    <div class="strip-i">🛒 Ingredientes con link a Amazon</div>
+    <div class="strip-i">🧑‍🍳 Apto para principiantes</div>
+  </div>
+
+  <!-- RECIPE BROWSER -->
+  <section class="browser" id="recetas">
+    <div class="browser-top">
+      <div class="browser-title">🍴 Todas las recetas</div>
+      <div class="search-box">
+        <span>🔍</span>
+        <input type="text" id="search-input" placeholder="Buscar receta..." oninput="filterRecipes()">
+      </div>
+    </div>
+    <div class="cat-tabs" id="cat-tabs">
+      <div class="cat-tab active" onclick="setcat('all',this)">🍴 Todas</div>
+      <div class="cat-tab" onclick="setcat('pollo',this)">🍗 Pollo</div>
+      <div class="cat-tab" onclick="setcat('carne',this)">🥩 Carne</div>
+      <div class="cat-tab" onclick="setcat('pescado',this)">🐟 Pescado</div>
+      <div class="cat-tab" onclick="setcat('verduras',this)">🥦 Verduras</div>
+      <div class="cat-tab" onclick="setcat('aperitivos',this)">🍟 Aperitivos</div>
+      <div class="cat-tab" onclick="setcat('postres',this)">🍩 Postres</div>
+      <div class="cat-tab" onclick="setcat('desayunos',this)">🥚 Desayunos</div>
+    </div>
+    <div class="recipe-count" id="recipe-count"></div>
+    <div class="recipes-grid" id="recipes-grid"></div>
+  </section>
+
+  <!-- EQUIPAMIENTO -->
+  <div class="afil-strip" id="equipamiento">
+    <div class="afil-inner">
+      <div class="sh">
+        <div class="stag">Equipamiento recomendado</div>
+        <h2 class="st">Lo que necesitas para <em>empezar</em></h2>
+        <p class="ss">Selección honesta de productos que usamos y recomendamos.</p>
+      </div>
+      <div class="prod-grid">
+        <div class="prod-c" style="padding-top:2.2rem">
+          <span class="top-l">⭐ Top Pick</span>
+          <span class="p-em">🌀</span>
+          <div class="p-nm">Airfryer Philips 4.1L</div>
+          <p class="p-ds">La más vendida en España. Silenciosa, fácil de limpiar y perfecta para 2-4 personas.</p>
+          <div class="p-pr">desde 89€</div>
+          <button class="btn-az" onclick="amz('Philips+airfryer+4L')">Ver en Amazon →</button>
+        </div>
+        <div class="prod-c">
+          <span class="p-em">🥢</span>
+          <div class="p-nm">Kit de accesorios</div>
+          <p class="p-ds">Bandejas perforadas, moldes de silicona y pinzas. Compatibles con casi todas las airfryers.</p>
+          <div class="p-pr">desde 18€</div>
+          <button class="btn-az" onclick="amz('kit+accesorios+airfryer')">Ver en Amazon →</button>
+        </div>
+        <div class="prod-c">
+          <span class="p-em">🌡️</span>
+          <div class="p-nm">Termómetro de cocina</div>
+          <p class="p-ds">Imprescindible para carnes. Saber la temperatura interna garantiza cocción perfecta.</p>
+          <div class="p-pr">desde 12€</div>
+          <button class="btn-az" onclick="amz('termometro+cocina+digital')">Ver en Amazon →</button>
+        </div>
+        <div class="prod-c">
+          <span class="p-em">📖</span>
+          <div class="p-nm">Libro de recetas airfryer</div>
+          <p class="p-ds">Complemento perfecto a esta web. 100 recetas con fotos para tener siempre inspiración.</p>
+          <div class="p-pr">desde 14€</div>
+          <button class="btn-az" onclick="amz('libro+recetas+airfryer+español')">Ver en Amazon →</button>
+        </div>
+      </div>
+      <p class="dscl">⚠️ <strong>Aviso legal:</strong> Los enlaces de esta página son de afiliado de Amazon. Si compras a través de ellos recibo una pequeña comisión sin coste adicional para ti. Solo recomiendo productos que he investigado o probado.</p>
+    </div>
+  </div>
+
+  <!-- TIPS -->
+  <section class="tips-s">
+    <div class="sh">
+      <div class="stag">Consejos esenciales</div>
+      <h2 class="st">4 trucos para resultados <em>perfectos</em></h2>
+    </div>
+    <div class="tips-g">
+      <div class="tip-c"><div class="tip-n">01</div><div class="tip-t">Precalienta siempre</div><p class="tip-d">3-5 minutos a temperatura antes de meter la comida. El calor inicial es lo que da el crujiente.</p></div>
+      <div class="tip-c"><div class="tip-n">02</div><div class="tip-t">No amontones</div><p class="tip-d">El aire caliente necesita circular. Una sola capa siempre. Mejor hacer dos tandas que una mala.</p></div>
+      <div class="tip-c"><div class="tip-n">03</div><div class="tip-t">Da la vuelta</div><p class="tip-d">A mitad del tiempo, dale la vuelta o agita la cesta. El dorado uniforme no sale solo.</p></div>
+      <div class="tip-c"><div class="tip-n">04</div><div class="tip-t">Seca los alimentos</div><p class="tip-d">El exceso de agua es el enemigo del crujiente. Seca bien con papel de cocina antes de cocinar.</p></div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="nl">
+    <h2>Una receta nueva cada semana</h2>
+    <p>Más de 5.000 personas ya reciben nuestras recetas cada jueves.</p>
+    <div class="nl-f">
+      <input type="email" placeholder="tu@email.com">
+      <button>Suscribirme 🍽️</button>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Airfryer Fácil</strong> · +60 Recetas sencillas para freidora de aire</p>
+    <p style="margin-top:.35rem"><a href="#">Privacidad</a> · <a href="#">Aviso de afiliados</a> · <a href="#">Contacto</a></p>
+    <p style="margin-top:.6rem;font-size:.7rem">© 2025 Airfryer Fácil. Participante en el Programa de Afiliados de Amazon EU, un programa de publicidad para afiliados diseñado para ofrecer a sitios web un medio para obtener comisiones por publicidad, publicitando e incluyendo enlaces a Amazon.es</p>
+  </footer>
+</div>
+
+<!-- ===== RECIPE DETAIL ===== -->
+<div id="page-recipe" class="page">
+  <div class="rd-wrap">
+    <button class="back-btn" onclick="goHome()">← Volver a recetas</button>
+    <div id="rd-content"></div>
+  </div>
+</div>
+
+<script>
+// ─── HELPERS ───────────────────────────────────────────────
+function sid(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'});}
+function amz(q){window.open('https://www.amazon.es/s?k='+q+'&tag=TU-TAG-AFILIADO','_blank');}
+function goHome(){
+  document.getElementById('page-recipe').classList.remove('active');
+  document.getElementById('page-home').classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ─── RECIPE DATA ────────────────────────────────────────────
+// Format: {id, cat, emoji, th (thumb class), title, time, temp, serv, cal, tags[], desc, ingredients:[{a,n,q}], steps:[{t,d,tip?}]}
+// ing q = amazon search query
+
+const RECIPES = [
+// ══ POLLO ══════════════════════════════════════════════
+{id:'alitas-bbq',cat:'pollo',emoji:'🍗',th:'th-a',title:'Alitas de pollo BBQ crujientes',time:'18 min',temp:'200°C',serv:'2 pers',cal:'320 kcal',diff:'Fácil',
+tags:['Sin gluten','Familiar'],
+desc:'El clásico de la airfryer. Exterior crujiente sin aceite y una marinada de 4 ingredientes. La receta más buscada en toda la web.',
+ingredients:[
+  {a:'500 g',n:'Alitas de pollo',q:'alitas+de+pollo+fresco'},
+  {a:'3 cdas',n:'Salsa BBQ',q:'salsa+BBQ+botella'},
+  {a:'1 cda',n:'Pimentón ahumado',q:'pimentón+ahumado+especias'},
+  {a:'1 cda',n:'Ajo en polvo',q:'ajo+en+polvo+especias'},
+  {a:'Sal y pimienta',n:'al gusto',q:'sal+y+pimienta+cocina'},
+],
+steps:[
+  {t:'Seca las alitas',d:'Seca muy bien con papel de cocina. Este paso es el más importante para conseguir el exterior crujiente.',tip:'💡 Déjalas en nevera destapadas 1 hora antes si puedes.'},
+  {t:'Prepara la marinada',d:'Mezcla la salsa BBQ, el pimentón y el ajo en polvo. Unta cada alita por todos lados y deja marinar 15 min mínimo.'},
+  {t:'Precalienta a 200°C',d:'Precalienta la airfryer 3 minutos antes de meter el pollo.'},
+  {t:'Cocina 18 minutos',d:'Coloca las alitas en una capa sin amontonar. 9 minutos, dales la vuelta, otros 9 minutos.',tip:'⚠️ No las amontones o no crujirán igual.'},
+  {t:'Reposa 2 min y sirve',d:'Sirve con más salsa BBQ y patatas gajo.'},
+]},
+
+{id:'pechugas-hierbas',cat:'pollo',emoji:'🍖',th:'th-a',title:'Pechugas jugosas con hierbas',time:'16 min',temp:'190°C',serv:'2 pers',cal:'210 kcal',diff:'Fácil',
+tags:['Bajo en calorías','Sin gluten'],
+desc:'Pechugas tiernas y jugosas sin el aburrimiento de siempre. El marinado rápido con hierbas lo cambia todo.',
+ingredients:[
+  {a:'2 ud',n:'Pechugas de pollo',q:'pechuga+de+pollo+fresca'},
+  {a:'1 cda',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'1 cdita',n:'Orégano seco',q:'orégano+seco+especias'},
+  {a:'1 cdita',n:'Tomillo seco',q:'tomillo+seco+especias'},
+  {a:'2 dientes',n:'Ajo laminado',q:'ajo+fresco'},
+],
+steps:[
+  {t:'Aplana un poco la pechuga',d:'Con la palma o un mazo de cocina, iguala el grosor para cocción uniforme.'},
+  {t:'Marina con hierbas y aceite',d:'Unta con aceite, ajo, orégano, tomillo, sal y pimienta. Deja 10 minutos.',tip:'💡 Si tienes tiempo, márinala toda la noche en el frigorífico.'},
+  {t:'Precalienta a 190°C',d:'3 minutos de precalentamiento.'},
+  {t:'Cocina 16 minutos',d:'8 minutos por cada lado. Comprueba que el interior llega a 75°C con un termómetro.'},
+  {t:'Reposa y corta',d:'5 minutos de reposo antes de cortar. Así los jugos se redistribuyen y queda más tierna.'},
+]},
+
+{id:'muslos-limon',cat:'pollo',emoji:'🍋',th:'th-a',title:'Muslos de pollo al limón y romero',time:'25 min',temp:'195°C',serv:'2 pers',cal:'350 kcal',diff:'Fácil',
+tags:['Sin gluten','Familiar'],
+desc:'Muslos crujientes por fuera, jugosos por dentro. El limón y el romero fresco hacen una combinación irresistible.',
+ingredients:[
+  {a:'4 ud',n:'Muslos de pollo',q:'muslos+de+pollo+fresco'},
+  {a:'1 ud',n:'Limón (zumo y ralladura)',q:'limones+frescos'},
+  {a:'2 ramitas',n:'Romero fresco',q:'romero+fresco+hierbas'},
+  {a:'2 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'4 dientes',n:'Ajo',q:'ajo+fresco'},
+],
+steps:[
+  {t:'Marina los muslos',d:'Mezcla zumo de limón, ralladura, romero picado, ajo, aceite, sal y pimienta. Unta los muslos y deja mínimo 20 min.'},
+  {t:'Precalienta a 195°C',d:'4 minutos de precalentamiento.'},
+  {t:'Cocina 25 minutos',d:'Coloca los muslos con la piel hacia arriba. A los 15 min dales la vuelta y termina 10 minutos.',tip:'💡 Los últimos 3 minutos sube a 210°C para dorar la piel.'},
+  {t:'Comprueba temperatura',d:'El pollo debe llegar a 80°C en el interior junto al hueso.'},
+]},
+
+{id:'nuggets-caseros',cat:'pollo',emoji:'🍗',th:'th-a',title:'Nuggets de pollo caseros crujientes',time:'14 min',temp:'200°C',serv:'4 pers',cal:'280 kcal',diff:'Fácil',
+tags:['Para niños','Familiar'],
+desc:'Los nuggets que querrás hacer siempre en vez de comprar los congelados. Crujientes, tiernos y sin sorpresas.',
+ingredients:[
+  {a:'400 g',n:'Pechuga de pollo picada',q:'pechuga+de+pollo+fresca'},
+  {a:'80 g',n:'Pan rallado crujiente',q:'pan+rallado+crujiente+panko'},
+  {a:'2 ud',n:'Huevos',q:'huevos+frescos'},
+  {a:'50 g',n:'Harina',q:'harina+de+trigo'},
+  {a:'1 cdita',n:'Pimentón dulce',q:'pimentón+dulce+especias'},
+],
+steps:[
+  {t:'Prepara la pechuga',d:'Corta en trozos del tamaño de un nugget o pica fino. Salpimenta.'},
+  {t:'Empana en tres pasos',d:'Harina → huevo batido → pan rallado mezclado con pimentón. Presiona bien el pan rallado.',tip:'💡 Congela 10 min antes de cocinar para que el empanado quede firme.'},
+  {t:'Precalienta a 200°C',d:'3 minutos de precalentamiento. Rocía la cesta con spray de aceite.'},
+  {t:'Cocina 14 min',d:'7 minutos por cada lado. Deben quedar dorados y crujientes. Sirve con ketchup o mayonesa.'},
+]},
+
+{id:'contramuslos-miel',cat:'pollo',emoji:'🍯',th:'th-a',title:'Contramuslos con miel y mostaza',time:'22 min',temp:'190°C',serv:'2 pers',cal:'380 kcal',diff:'Fácil',
+tags:['Familiar','Dulce-salado'],
+desc:'La combinación de miel y mostaza en la airfryer crea una capa caramelizada espectacular. Se hacen solos.',
+ingredients:[
+  {a:'4 ud',n:'Contramuslos de pollo',q:'contramuslos+pollo+sin+hueso'},
+  {a:'2 cdas',n:'Miel',q:'miel+natural'},
+  {a:'2 cdas',n:'Mostaza Dijon',q:'mostaza+dijon'},
+  {a:'1 cda',n:'Salsa de soja',q:'salsa+de+soja'},
+  {a:'1 diente',n:'Ajo picado',q:'ajo+fresco'},
+],
+steps:[
+  {t:'Prepara la salsa',d:'Mezcla miel, mostaza, salsa de soja y ajo. Reserva un poco para pintar al final.'},
+  {t:'Marina 15 minutos',d:'Unta los contramuslos con la salsa y deja reposar.'},
+  {t:'Cocina 22 minutos',d:'Precalienta a 190°C. Cocina 12 min, da la vuelta y pinta con más salsa. 10 min más.',tip:'💡 El azúcar de la miel se carameliza: vigila que no se queme los últimos minutos.'},
+  {t:'Sirve con ensalada',d:'Quedan geniales sobre una cama de rúcula o con arroz basmati.'},
+]},
+
+{id:'pollo-tikka',cat:'pollo',emoji:'🌶️',th:'th-a',title:'Pollo tikka masala express',time:'20 min',temp:'200°C',serv:'2 pers',cal:'310 kcal',diff:'Media',
+tags:['Especiado','Sin gluten'],
+desc:'Todo el sabor del tikka masala en 20 minutos. El marinado de yogur hace que el pollo quede increíblemente tierno.',
+ingredients:[
+  {a:'500 g',n:'Pechuga en dados',q:'pechuga+de+pollo+fresca'},
+  {a:'150 g',n:'Yogur natural',q:'yogur+natural+griego'},
+  {a:'2 cdas',n:'Pasta tikka masala',q:'pasta+tikka+masala+curry'},
+  {a:'1 ud',n:'Limón (zumo)',q:'limones+frescos'},
+  {a:'Cilantro fresco',n:'para decorar',q:'cilantro+fresco+hierbas'},
+],
+steps:[
+  {t:'Marina en yogur',d:'Mezcla el yogur con la pasta tikka y el zumo de limón. Añade el pollo y marina al menos 1 hora (mejor toda la noche).',tip:'💡 El yogur ablanda las fibras de la carne: cuanto más tiempo, más tierno.'},
+  {t:'Escurre y cocina',d:'Retira el exceso de marinada. Precalienta a 200°C y cocina 10 minutos.'},
+  {t:'Da la vuelta y termina',d:'Da la vuelta y cocina 8-10 minutos más hasta que haya manchas negras (es normal en el tikka).'},
+  {t:'Sirve',d:'Con arroz basmati, naan tostado y cilantro fresco picado.'},
+]},
+
+{id:'pollo-ajillo',cat:'pollo',emoji:'🧄',th:'th-a',title:'Pollo al ajillo en airfryer',time:'20 min',temp:'185°C',serv:'2 pers',cal:'290 kcal',diff:'Fácil',
+tags:['Clásico','Sin gluten'],
+desc:'El ajillo de siempre pero mucho más rápido y sin ensuciar sartén. El ajo se tuesta perfectamente en la airfryer.',
+ingredients:[
+  {a:'4 trozos',n:'Pollo troceado',q:'pollo+troceado+fresco'},
+  {a:'6 dientes',n:'Ajo',q:'ajo+fresco'},
+  {a:'3 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'1 cda',n:'Perejil fresco',q:'perejil+fresco'},
+  {a:'1/2 vaso',n:'Vino blanco',q:'vino+blanco+cocina'},
+],
+steps:[
+  {t:'Prepara el pollo',d:'Salpimenta generosamente los trozos de pollo. Deja que cojan temperatura ambiente 15 min.'},
+  {t:'Prepara el ajillo',d:'Lamina el ajo. Mezcla con el aceite, el vino blanco y el perejil picado.'},
+  {t:'Cocina el pollo',d:'Precalienta a 185°C. Mete el pollo 10 minutos. Añade la mezcla de ajillo por encima y cocina 10 min más.',tip:'💡 El vino blanco se evapora y deja un sabor espectacular.'},
+  {t:'Sirve con su jugo',d:'Sirve recogiendo todos los jugos de la cesta. Pan de pueblo para mojar obligatorio.'},
+]},
+
+{id:'deditos-empanados',cat:'pollo',emoji:'🍗',th:'th-a',title:'Deditos de pollo empanados',time:'12 min',temp:'200°C',serv:'3 pers',cal:'300 kcal',diff:'Fácil',
+tags:['Para niños','Aperitivo'],
+desc:'Más crujientes que los del supermercado y sin casi aceite. Con salsa de queso son adictivos.',
+ingredients:[
+  {a:'350 g',n:'Filetes de pechuga finos',q:'pechuga+de+pollo+fresca'},
+  {a:'100 g',n:'Pan rallado panko',q:'pan+rallado+panko+japones'},
+  {a:'2 ud',n:'Huevos',q:'huevos+frescos'},
+  {a:'1 cdita',n:'Cúrcuma',q:'cúrcuma+molida+especias'},
+  {a:'Spray de aceite',n:'para rociar',q:'spray+aceite+cocina+airfryer'},
+],
+steps:[
+  {t:'Corta en tiras',d:'Corta los filetes en tiras de 1.5 cm de ancho. Salpimenta.'},
+  {t:'Empana con panko',d:'Harina → huevo → panko con cúrcuma. El panko japonés da más crujiente que el normal.',tip:'💡 Usa panko japonés si puedes, el crujiente es muy diferente.'},
+  {t:'Cocina 12 minutos',d:'Precalienta a 200°C. Rocía con spray de aceite, cocina 6 min por lado. Deben estar bien dorados.'},
+  {t:'Sirve calientes',d:'Con salsa de queso cheddar, sriracha o simplemente ketchup.'},
+]},
+
+{id:'pechuga-rellena',cat:'pollo',emoji:'🧀',th:'th-a',title:'Pechuga rellena de queso y jamón',time:'18 min',temp:'190°C',serv:'2 pers',cal:'380 kcal',diff:'Media',
+tags:['Especial','Sin gluten'],
+desc:'El relleno de queso fundido que sale al cortar la pechuga es un espectáculo. Y es muy fácil de hacer.',
+ingredients:[
+  {a:'2 ud',n:'Pechugas gruesas',q:'pechuga+de+pollo+fresca'},
+  {a:'4 lonchas',n:'Jamón serrano',q:'jamón+serrano+lonchas'},
+  {a:'4 lonchas',n:'Queso Havarti o Gouda',q:'queso+havarti+lonchas'},
+  {a:'1 cdita',n:'Pimentón ahumado',q:'pimentón+ahumado+especias'},
+  {a:'Palillos de madera',n:'para cerrar',q:'palillos+madera+cocina'},
+],
+steps:[
+  {t:'Abre la pechuga',d:'Con un cuchillo afilado, haz un corte en el lateral de la pechuga creando un "bolsillo" sin llegar al otro lado.'},
+  {t:'Rellena',d:'Mete dentro el jamón y el queso. Cierra con palillos de madera para que no se abra. Salpimenta por fuera y añade pimentón.'},
+  {t:'Cocina 18 minutos',d:'Precalienta a 190°C. Cocina 9 min por lado.',tip:'💡 Vigila que los palillos de madera no queden demasiado cerca del calor.'},
+  {t:'Reposa y sirve',d:'5 minutos de reposo. Al cortar verás el queso fundido derramarse. Sirve con ensalada verde.'},
+]},
+
+{id:'pollo-pimenton-patatas',cat:'pollo',emoji:'🫚',th:'th-a',title:'Pollo con pimentón y patatas baby',time:'28 min',temp:'195°C',serv:'2 pers',cal:'420 kcal',diff:'Fácil',
+tags:['Completo','Familiar'],
+desc:'Un plato completo en una sola cesta. Las patatas baby se cocinan a la vez que el pollo y absorben todos los jugos.',
+ingredients:[
+  {a:'4 trozos',n:'Pollo (muslos o contramuslos)',q:'pollo+troceado+fresco'},
+  {a:'300 g',n:'Patatas baby',q:'patatas+baby+pequeñas'},
+  {a:'2 cdas',n:'Pimentón dulce y ahumado',q:'pimentón+dulce+ahumado+mezcla'},
+  {a:'3 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'1 cabeza',n:'Ajo (entera)',q:'ajo+fresco'},
+],
+steps:[
+  {t:'Aliña todo junto',d:'Mezcla el pollo y las patatas baby con aceite, pimentón, sal y pimienta. Añade los dientes de ajo con piel.'},
+  {t:'Precalienta a 195°C',d:'4 minutos de precalentamiento.'},
+  {t:'Cocina 28 minutos',d:'Primero las patatas 10 min. Añade el pollo y cocina todo junto 18 min más, dando la vuelta a mitad.',tip:'💡 Los dientes de ajo asados con piel quedan cremosos y suaves: excelentes para untar en pan.'},
+  {t:'Sirve en la fuente',d:'Sirve todo junto con el jugo de la cesta. Aplasta los ajos asados sobre el pollo.'},
+]},
+
+// ══ CARNE ══════════════════════════════════════════════
+{id:'hamburguesas',cat:'carne',emoji:'🍔',th:'th-b',title:'Hamburguesas perfectas en airfryer',time:'12 min',temp:'190°C',serv:'2 pers',cal:'450 kcal',diff:'Fácil',
+tags:['Clásico','Familiar'],
+desc:'La hamburguesa jugosa perfecta sin necesidad de sartén ni barbacoa. Exterior sellado, interior jugoso.',
+ingredients:[
+  {a:'400 g',n:'Carne picada (mezcla res/cerdo)',q:'carne+picada+mezcla+hamburguesa'},
+  {a:'2 ud',n:'Panes de hamburguesa',q:'pan+hamburguesa+brioche'},
+  {a:'2 lonchas',n:'Queso cheddar',q:'queso+cheddar+lonchas'},
+  {a:'Al gusto',n:'Lechuga, tomate, cebolla',q:'lechuga+fresca'},
+  {a:'2 cdas',n:'Salsa burger (mayo+ketchup)',q:'salsa+burger+especial'},
+],
+steps:[
+  {t:'Forma las hamburguesas',d:'Divide la carne en 2 porciones de 200g. Forma discos de 1.5 cm de grosor. Haz una pequeña hendidura en el centro con el pulgar para evitar que se hinchen.',tip:'💡 No trabajes demasiado la carne o quedará dura.'},
+  {t:'Precalienta a 190°C',d:'3 minutos.'},
+  {t:'Cocina 10-12 minutos',d:'5-6 minutos por lado según el punto deseado. Al dar la vuelta, coloca el queso encima.'},
+  {t:'Tuesta el pan',d:'Los últimos 2 minutos, mete el pan abierto y tóstalo.'},
+  {t:'Monta la hamburguesa',d:'Salsa → lechuga → tomate → hamburguesa con queso → cebolla → pan. Sirve inmediatamente.'},
+]},
+
+{id:'albondigas',cat:'carne',emoji:'🍝',th:'th-b',title:'Albóndigas jugosas en airfryer',time:'15 min',temp:'190°C',serv:'4 pers',cal:'320 kcal',diff:'Fácil',
+tags:['Clásico','Familiar'],
+desc:'Albóndigas perfectamente doradas por fuera y jugosas por dentro, sin freírlas en aceite. Un clásico simplificado.',
+ingredients:[
+  {a:'500 g',n:'Carne picada mixta',q:'carne+picada+mezcla+ternera+cerdo'},
+  {a:'1 ud',n:'Huevo',q:'huevos+frescos'},
+  {a:'50 g',n:'Pan rallado',q:'pan+rallado'},
+  {a:'2 dientes',n:'Ajo picado',q:'ajo+fresco'},
+  {a:'Perejil',n:'fresco picado',q:'perejil+fresco'},
+],
+steps:[
+  {t:'Prepara la masa',d:'Mezcla la carne con huevo, pan rallado, ajo, perejil, sal y pimienta. Mezcla con las manos pero sin apretar demasiado.'},
+  {t:'Forma las albóndigas',d:'Haz bolas del tamaño de una nuez grande. Deja en nevera 15 min para que cojan firmeza.',tip:'💡 Las manos mojadas evitan que la carne se pegue.'},
+  {t:'Cocina 15 minutos',d:'Precalienta a 190°C. Cocina 8 min, sacude la cesta y cocina 7 min más.'},
+  {t:'Añade a la salsa',d:'Sirve directamente o añade a salsa de tomate caliente durante 5 minutos para que absorban el sabor.'},
+]},
+
+{id:'costillas-cerdo',cat:'carne',emoji:'🍖',th:'th-b',title:'Costillas de cerdo caramelizadas',time:'35 min',temp:'180°C',serv:'2 pers',cal:'520 kcal',diff:'Media',
+tags:['Especial','Sin gluten'],
+desc:'Las costillas más tiernas que hayas hecho en casa. Sin horno, sin barbacoa. La airfryer las hace caramelizarse perfectamente.',
+ingredients:[
+  {a:'600 g',n:'Costillas de cerdo',q:'costillas+de+cerdo+frescas'},
+  {a:'3 cdas',n:'Salsa BBQ',q:'salsa+BBQ+ahumada'},
+  {a:'1 cda',n:'Miel',q:'miel+natural'},
+  {a:'1 cda',n:'Pimentón ahumado',q:'pimentón+ahumado+especias'},
+  {a:'1 cdita',n:'Comino molido',q:'comino+molido+especias'},
+],
+steps:[
+  {t:'Prepara las costillas',d:'Quita la membrana del interior si la tiene. Salpimenta y frota con pimentón y comino por todas partes.'},
+  {t:'Primera cocción',d:'Precalienta a 180°C. Cocina 20 minutos. Las costillas se cocinan por dentro.',tip:'💡 Si son muy gruesas, baja a 170°C y añade 10 min más.'},
+  {t:'Glaseado y caramelizado',d:'Mezcla BBQ con miel. Pinta generosamente las costillas. Sube a 200°C y cocina 12-15 min más hasta que brillen y estén caramelizadas.'},
+  {t:'Reposa y sirve',d:'5 minutos de reposo. Sirve con más salsa BBQ y ensalada de col.'},
+]},
+
+{id:'lomo-manzana',cat:'carne',emoji:'🍎',th:'th-b',title:'Lomo de cerdo con manzana y canela',time:'22 min',temp:'185°C',serv:'2 pers',cal:'350 kcal',diff:'Media',
+tags:['Dulce-salado','Especial'],
+desc:'La combinación dulce-salada de cerdo con manzana es un clásico que en airfryer sale en la mitad de tiempo.',
+ingredients:[
+  {a:'400 g',n:'Lomo de cerdo (medallones)',q:'lomo+de+cerdo+fresco'},
+  {a:'2 ud',n:'Manzanas Golden',q:'manzanas+golden+frescas'},
+  {a:'1 cdita',n:'Canela molida',q:'canela+molida+especias'},
+  {a:'2 cdas',n:'Mantequilla',q:'mantequilla+sin+sal'},
+  {a:'1 cda',n:'Miel',q:'miel+natural'},
+],
+steps:[
+  {t:'Salpimenta el lomo',d:'Corta en medallones de 2 cm. Salpimenta y deja a temperatura ambiente 10 minutos.'},
+  {t:'Prepara las manzanas',d:'Pela y corta en gajos. Mezcla con canela y miel.'},
+  {t:'Cocina el lomo',d:'Precalienta a 185°C. Cocina los medallones 10 min, da la vuelta.'},
+  {t:'Añade las manzanas',d:'Coloca las manzanas alrededor del lomo con la mantequilla en trocitos. Cocina 10-12 min más.',tip:'💡 Las manzanas se caramelizan con la canela y los jugos del cerdo.'},
+  {t:'Sirve con la salsa',d:'Recoge todos los jugos caramelizados de la cesta. Son la mejor salsa del mundo.'},
+]},
+
+{id:'solomillo-pimienta',cat:'carne',emoji:'🥩',th:'th-b',title:'Solomillo de cerdo con salsa de pimienta',time:'18 min',temp:'195°C',serv:'2 pers',cal:'320 kcal',diff:'Media',
+tags:['Especial','Sin gluten'],
+desc:'Un solomillo tierno y jugoso con costra de pimienta. Parece plato de restaurante y se hace en 18 minutos.',
+ingredients:[
+  {a:'400 g',n:'Solomillo de cerdo',q:'solomillo+de+cerdo+fresco'},
+  {a:'1 cda',n:'Pimienta negra gruesa',q:'pimienta+negra+en+grano+molinillo'},
+  {a:'1 cda',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'100 ml',n:'Nata para cocinar',q:'nata+para+cocinar'},
+  {a:'1 cda',n:'Mostaza en grano',q:'mostaza+en+grano+antigua'},
+],
+steps:[
+  {t:'Prepara el solomillo',d:'Ata con hilo de cocina para que mantenga la forma redonda. Unta con aceite y aplasta pimienta gruesa por toda la superficie.'},
+  {t:'Sella el exterior',d:'Precalienta a 195°C. Cocina 8 minutos dando la vuelta cada 2 min para sellar todo el exterior.',tip:'💡 Este primer sellado crea la costra y mantiene los jugos dentro.'},
+  {t:'Termina la cocción',d:'Baja a 180°C y cocina 8-10 minutos más. El interior debe estar a 65°C (punto rosado).'},
+  {t:'Salsa rápida',d:'Mientras reposa, calienta la nata con la mostaza y los jugos de la cesta en un cazo. Sirve con el solomillo cortado en medallones.'},
+]},
+
+{id:'salchichas-pimientos',cat:'carne',emoji:'🌭',th:'th-b',title:'Salchichas con pimientos y cebolla',time:'18 min',temp:'185°C',serv:'2 pers',cal:'380 kcal',diff:'Fácil',
+tags:['Rápido','Familiar'],
+desc:'El clásico de las ferias en versión saludable. Las salchichas y verduras se hacen a la vez en la airfryer.',
+ingredients:[
+  {a:'4 ud',n:'Salchichas bratwurst o frankfurt',q:'salchichas+bratwurst+frescas'},
+  {a:'2 ud',n:'Pimientos (rojo y verde)',q:'pimientos+frescos+mezcla'},
+  {a:'1 ud',n:'Cebolla',q:'cebollas+frescas'},
+  {a:'1 cda',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'1 cdita',n:'Pimentón dulce',q:'pimentón+dulce+especias'},
+],
+steps:[
+  {t:'Corta las verduras',d:'Corta los pimientos y la cebolla en tiras. Mezcla con aceite, pimentón y sal.'},
+  {t:'Cocina las verduras primero',d:'Precalienta a 185°C. Cocina las verduras 8 minutos agitando a mitad.'},
+  {t:'Añade las salchichas',d:'Haz cortes diagonales en las salchichas (no las parta del todo). Añade a la cesta y cocina 10 min más.',tip:'💡 Los cortes en las salchichas ayudan a que se cocinen por dentro sin explotar.'},
+  {t:'Sirve en bocadillo',d:'En pan de baguette o hot dog con mostaza y ketchup.'},
+]},
+
+{id:'chuletillas-cordero',cat:'carne',emoji:'🥩',th:'th-b',title:'Chuletillas de cordero asadas',time:'12 min',temp:'200°C',serv:'2 pers',cal:'420 kcal',diff:'Fácil',
+tags:['Especial','Sin gluten'],
+desc:'Chuletillas con costra exterior perfecta y centro rosado. El ajo y el romero las elevan a otro nivel.',
+ingredients:[
+  {a:'8 ud',n:'Chuletillas de cordero',q:'chuletillas+cordero+frescas'},
+  {a:'3 dientes',n:'Ajo picado',q:'ajo+fresco'},
+  {a:'2 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'Romero fresco',n:'al gusto',q:'romero+fresco+hierbas'},
+  {a:'Sal en escamas',n:'para terminar',q:'sal+en+escamas+maldon'},
+],
+steps:[
+  {t:'Marina 30 minutos',d:'Mezcla ajo, aceite y romero. Unta las chuletillas y deja marinar.'},
+  {t:'Precalienta a 200°C',d:'3 minutos. Las chuletillas finas necesitan calor muy alto y rápido.'},
+  {t:'Cocina 5-6 min por lado',d:'Para punto rosado, 5 min por cada lado. Para más hecho, 7 min.',tip:'⚠️ Las chuletillas finas se hacen muy rápido. Vigílalas.'},
+  {t:'Sal en escamas y sirve',d:'Añade sal en escamas justo al servir. Con patatas asadas o ensalada verde.'},
+]},
+
+{id:'flank-chimichurri',cat:'carne',emoji:'🥩',th:'th-b',title:'Flank steak con chimichurri',time:'14 min',temp:'200°C',serv:'2 pers',cal:'390 kcal',diff:'Media',
+tags:['Especial','Sin gluten'],
+desc:'Un corte de carne con personalidad que se potencia con el chimichurri. Cortado a contrafibra queda tiernísimo.',
+ingredients:[
+  {a:'400 g',n:'Flank steak o vacío',q:'flank+steak+ternera'},
+  {a:'1 manojo',n:'Perejil fresco',q:'perejil+fresco'},
+  {a:'3 dientes',n:'Ajo',q:'ajo+fresco'},
+  {a:'4 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'2 cdas',n:'Vinagre de vino tinto',q:'vinagre+de+vino+tinto'},
+],
+steps:[
+  {t:'Prepara el chimichurri',d:'Pica fino el perejil y el ajo. Mezcla con aceite, vinagre, sal, pimienta y orégano. Deja reposar 30 min.'},
+  {t:'Salpimenta la carne',d:'Seca bien el flank steak. Salpimenta generosamente y unta con un poco de aceite.'},
+  {t:'Cocina a fuego alto',d:'Precalienta a 200°C. Cocina 6-7 minutos por lado para punto medio.',tip:'💡 El flank steak es mejor al punto o medio. Muy hecho queda duro.'},
+  {t:'Reposa y corta',d:'5 minutos de reposo obligatorio. Corta en láminas FINAS a contrafibra (perpendicular a las vetas). Sirve con abundante chimichurri.'},
+]},
+
+// ══ PESCADO ════════════════════════════════════════════
+{id:'salmon-limon',cat:'pescado',emoji:'🐟',th:'th-c',title:'Salmón al limón y eneldo',time:'12 min',temp:'180°C',serv:'2 pers',cal:'280 kcal',diff:'Fácil',
+tags:['Saludable','Sin gluten'],
+desc:'El salmón más jugoso y fácil que puedes hacer. En 12 minutos tienes un plato de restaurante en casa.',
+ingredients:[
+  {a:'2 lomos',n:'Salmón fresco',q:'lomos+salmón+frescos'},
+  {a:'1 ud',n:'Limón',q:'limones+frescos'},
+  {a:'1 cda',n:'Eneldo fresco o seco',q:'eneldo+seco+especias'},
+  {a:'1 cda',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'Sal en escamas',n:'y pimienta blanca',q:'sal+en+escamas+maldon'},
+],
+steps:[
+  {t:'Prepara el salmón',d:'Seca los lomos con papel. Unta con aceite, zumo de limón, eneldo, sal y pimienta blanca.'},
+  {t:'Precalienta a 180°C',d:'2-3 minutos. El salmón no necesita temperatura muy alta.'},
+  {t:'Cocina 10-12 minutos',d:'Con la piel hacia abajo. No des la vuelta si tienes piel: se cocinan por conducción.',tip:'💡 Para punto jugoso, 10 min. Para más hecho, 13 min. Nunca más o quedará seco.'},
+  {t:'Sirve con rodajas de limón',d:'Sobre camas de espinacas salteadas, arroz o con patatas asadas.'},
+]},
+
+{id:'gambas-ajillo',cat:'pescado',emoji:'🍤',th:'th-c',title:'Gambas al ajillo en airfryer',time:'10 min',temp:'180°C',serv:'2 pers',cal:'150 kcal',diff:'Fácil',
+tags:['Rápido','Sin gluten'],
+desc:'La versión más rápida del ajillo de siempre. En 10 minutos tienes un plato con todo el sabor sin ensuciar sartén.',
+ingredients:[
+  {a:'300 g',n:'Gambas peladas',q:'gambas+peladas+frescas+o+congeladas'},
+  {a:'4 dientes',n:'Ajo picado',q:'ajo+fresco'},
+  {a:'1 ud',n:'Guindilla (opcional)',q:'guindilla+seca+picante'},
+  {a:'2 cdas',n:'Aceite de oliva virgen extra',q:'aceite+de+oliva+virgen+extra'},
+  {a:'Perejil fresco',n:'al gusto',q:'perejil+fresco'},
+],
+steps:[
+  {t:'Prepara las gambas',d:'Descongela y seca muy bien con papel. El agua impide el dorado.',tip:'⚠️ Si no las secas bien, se cocinarán al vapor en vez de dorarse.'},
+  {t:'Marina 5 minutos',d:'Mezcla con aceite, ajo, guindilla y sal. Deja reposar.'},
+  {t:'Cocina muy rápido',d:'Precalienta a 180°C. Cocina 4 min, da la vuelta, 3 min más. Se hacen rapidísimo.',tip:'⚠️ No pases de 8 min en total o quedarán gumosas y duras.'},
+  {t:'Perejil y sirve',d:'Perejil fresco picado al momento. Pan tostado para mojar el aceite con ajo.'},
+]},
+
+{id:'merluza-crujiente',cat:'pescado',emoji:'🐠',th:'th-c',title:'Merluza rebozada crujiente',time:'12 min',temp:'200°C',serv:'2 pers',cal:'230 kcal',diff:'Fácil',
+tags:['Clásico','Familiar'],
+desc:'El rebozado perfecto sin baños de aceite. Crujiente por fuera, jugosa por dentro. Los niños la devoran.',
+ingredients:[
+  {a:'400 g',n:'Lomos de merluza',q:'merluza+lomos+frescos+o+congelados'},
+  {a:'80 g',n:'Pan rallado',q:'pan+rallado+crujiente'},
+  {a:'2 ud',n:'Huevos',q:'huevos+frescos'},
+  {a:'50 g',n:'Harina',q:'harina+de+trigo'},
+  {a:'1 ud',n:'Limón para servir',q:'limones+frescos'},
+],
+steps:[
+  {t:'Seca el pescado',d:'Seca muy bien los lomos. El agua arruina el rebozado. Salpimenta.'},
+  {t:'Empana',d:'Harina → huevo batido → pan rallado. Presiona bien para que se adhiera.',tip:'💡 Mezcla el pan rallado con ralladura de limón y un poco de ajo en polvo para más sabor.'},
+  {t:'Rocía con aceite',d:'Rocía con spray de aceite por encima para dorar bien.'},
+  {t:'Cocina 12 minutos',d:'Precalienta a 200°C. 6 minutos por cada lado con cuidado al darle la vuelta.'},
+  {t:'Sirve con limón',d:'Con patatas fritas, ensalada o salsa tártara.'},
+]},
+
+{id:'bacalao-tomate',cat:'pescado',emoji:'🍅',th:'th-c',title:'Bacalao al horno con tomate',time:'18 min',temp:'175°C',serv:'2 pers',cal:'200 kcal',diff:'Fácil',
+tags:['Saludable','Sin gluten'],
+desc:'Un guiso de bacalao exprés. El tomate frito casero que rodea el bacalao en la airfryer crea un plato de cuchareo increíble.',
+ingredients:[
+  {a:'400 g',n:'Bacalao desalado',q:'bacalao+desalado+lomos'},
+  {a:'200 ml',n:'Tomate frito',q:'tomate+frito+casero+bote'},
+  {a:'1 ud',n:'Pimiento verde',q:'pimientos+frescos+verdes'},
+  {a:'2 dientes',n:'Ajo',q:'ajo+fresco'},
+  {a:'Perejil y aceitunas',n:'para decorar',q:'aceitunas+verdes+sin+hueso'},
+],
+steps:[
+  {t:'Prepara la base',d:'Mezcla el tomate frito con el pimiento cortado fino y el ajo. Extiende en el fondo de una fuente apta para airfryer.'},
+  {t:'Coloca el bacalao',d:'Pon el bacalao encima de la salsa de tomate con la piel hacia abajo.'},
+  {t:'Cocina 18 minutos',d:'Precalienta a 175°C. Cocina 18 minutos sin tocar. El bacalao se deshacerá en lascas.',tip:'💡 Usa una fuente de barro o cerámica pequeña si cabe en tu airfryer.'},
+  {t:'Sirve',d:'Con perejil, aceitunas y pan para mojar en la salsa.'},
+]},
+
+{id:'sardinas-asadas',cat:'pescado',emoji:'🐟',th:'th-c',title:'Sardinas asadas con sal gorda',time:'10 min',temp:'200°C',serv:'2 pers',cal:'180 kcal',diff:'Fácil',
+tags:['Rápido','Sin gluten'],
+desc:'Las sardinas más fáciles del mundo. Solo necesitas sal y la airfryer hace el resto. Sin olor en la cocina.',
+ingredients:[
+  {a:'500 g',n:'Sardinas frescas limpias',q:'sardinas+frescas'},
+  {a:'2 cdas',n:'Sal gorda',q:'sal+gorda+cocina'},
+  {a:'1 ud',n:'Limón',q:'limones+frescos'},
+  {a:'Aceite de oliva',n:'para rociar',q:'aceite+de+oliva+virgen+extra'},
+  {a:'Pan',n:'para acompañar',q:'pan+integral+barra'},
+],
+steps:[
+  {t:'Limpia y seca las sardinas',d:'Pide que te las limpien en la pescadería. Sécalas bien con papel.'},
+  {t:'Sal gorda por encima',d:'Rocía con aceite y pon sal gorda generosamente. No hace falta nada más.'},
+  {t:'Cocina 10 minutos',d:'Precalienta a 200°C. Cocina 5 min por lado. La piel debe quedar crujiente.',tip:'💡 La airfryer elimina casi completamente el olor a sardina en la cocina.'},
+  {t:'Sirve con limón',d:'Exprime limón encima. Con pan tostado y un buen vino blanco frío.'},
+]},
+
+{id:'calamares-crujientes',cat:'pescado',emoji:'🦑',th:'th-c',title:'Calamares crujientes rebozados',time:'12 min',temp:'200°C',serv:'2 pers',cal:'250 kcal',diff:'Fácil',
+tags:['Aperitivo','Clásico'],
+desc:'Los calamares más crujientes sin litros de aceite. El truco está en el doble empanado y el spray de aceite.',
+ingredients:[
+  {a:'400 g',n:'Calamares en anillas',q:'calamares+anillas+fresco+o+congelado'},
+  {a:'100 g',n:'Harina de garbanzos',q:'harina+de+garbanzos'},
+  {a:'Spray de aceite',n:'abundante',q:'spray+aceite+cocina'},
+  {a:'1 cdita',n:'Ajo en polvo',q:'ajo+en+polvo+especias'},
+  {a:'Mayonesa',n:'para servir',q:'mayonesa+casera+o+comercial'},
+],
+steps:[
+  {t:'Seca los calamares',d:'Escurre y seca MUY bien. Salpimenta y añade ajo en polvo.'},
+  {t:'Reboza con harina de garbanzos',d:'La harina de garbanzos da un rebozado más crujiente y ligero. Sacude el exceso.',tip:'💡 La harina de garbanzos es el secreto del rebozado crujiente sin gluten.'},
+  {t:'Rocía con spray',d:'Rocía generosamente con spray de aceite por ambos lados.'},
+  {t:'Cocina 12 minutos',d:'Precalienta a 200°C. Cocina 6 min, agita, 6 min más. Deben estar muy dorados.'},
+  {t:'Sirve con alioli',d:'Con alioli o mayonesa de ajo y limón. Comer inmediatamente para que mantengan el crujiente.'},
+]},
+
+{id:'dorada-sal',cat:'pescado',emoji:'🐡',th:'th-c',title:'Dorada a la sal exprés',time:'18 min',temp:'190°C',serv:'2 pers',cal:'220 kcal',diff:'Media',
+tags:['Especial','Sin gluten'],
+desc:'La dorada a la sal en la mitad de tiempo que en el horno. La costra de sal mantiene toda la jugosidad del pescado.',
+ingredients:[
+  {a:'2 ud',n:'Doradas enteras (350g c/u)',q:'dorada+fresca+entera'},
+  {a:'500 g',n:'Sal gorda',q:'sal+gorda+cocina'},
+  {a:'2 claras',n:'de huevo',q:'huevos+frescos'},
+  {a:'Limón y perejil',n:'para servir',q:'limones+frescos'},
+  {a:'Aceite de oliva',n:'para servir',q:'aceite+de+oliva+virgen+extra'},
+],
+steps:[
+  {t:'Prepara la costra',d:'Mezcla la sal con las claras de huevo hasta obtener una pasta húmeda (textura arena mojada).'},
+  {t:'Envuelve la dorada',d:'Haz una cama de sal en papel de horno, coloca la dorada y cúbrela completamente con el resto de la sal. Presiona para sellar.'},
+  {t:'Cocina 18 minutos',d:'Precalienta a 190°C. La costra de sal quedará dura: es la señal de que está lista.',tip:'💡 El tamaño de la dorada importa: a 400g+, añade 3-4 minutos más.'},
+  {t:'Rompe la costra y sirve',d:'Rompe la costra en la mesa. La piel sale con la sal. Sirve con aceite de oliva y limón.'},
+]},
+
+{id:'boquerones-crujientes',cat:'pescado',emoji:'🐟',th:'th-c',title:'Boquerones crujientes con ajo',time:'8 min',temp:'200°C',serv:'2 pers',cal:'160 kcal',diff:'Fácil',
+tags:['Aperitivo','Rápido'],
+desc:'Boquerones crujientes en 8 minutos. Sin aceite hirviendo, sin salpicaduras. Perfectos como tapa.',
+ingredients:[
+  {a:'300 g',n:'Boquerones limpios',q:'boquerones+frescos'},
+  {a:'60 g',n:'Harina',q:'harina+de+trigo'},
+  {a:'1 cdita',n:'Ajo en polvo',q:'ajo+en+polvo+especias'},
+  {a:'Spray de aceite',n:'abundante',q:'spray+aceite+cocina'},
+  {a:'1 ud',n:'Limón',q:'limones+frescos'},
+],
+steps:[
+  {t:'Seca y enharina',d:'Seca los boquerones. Mezcla harina con ajo en polvo y sal. Pasa los boquerones por la harina sacudiendo el exceso.'},
+  {t:'Spray generoso',d:'Rocía bien con spray de aceite. Sin este paso no dorarán.'},
+  {t:'Cocina 8 minutos',d:'Precalienta a 200°C. 4 min por cada lado. Deben quedar crujientes y dorados.',tip:'💡 En boquerones pequeños, con 3 min por lado basta.'},
+  {t:'Limón y sal',d:'Zumo de limón al servir. Comer inmediatamente.'},
+]},
+
+// ══ VERDURAS ═══════════════════════════════════════════
+{id:'brocoli-ajo',cat:'verduras',emoji:'🥦',th:'th-d',title:'Brócoli crujiente con ajo y limón',time:'12 min',temp:'195°C',serv:'2 pers',cal:'90 kcal',diff:'Fácil',
+tags:['Vegano','Guarnición'],
+desc:'La verdura que convence a quien dice que no le gusta el brócoli. Los bordes tostados hacen la magia.',
+ingredients:[
+  {a:'400 g',n:'Brócoli en ramilletes',q:'brócoli+fresco'},
+  {a:'3 dientes',n:'Ajo laminado',q:'ajo+fresco'},
+  {a:'2 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'1 ud',n:'Limón',q:'limones+frescos'},
+  {a:'Sal en escamas',n:'y pimienta',q:'sal+en+escamas+maldon'},
+],
+steps:[
+  {t:'Prepara el brócoli',d:'Corta en ramilletes similares. Sécalo bien si lo has lavado.'},
+  {t:'Aliña',d:'Mezcla con aceite, ajo, sal y pimienta. Cubre bien cada ramilletes.',tip:'💡 No escatimes el aceite: es lo que da el tostado de los bordes.'},
+  {t:'Cocina 12 minutos',d:'Precalienta a 195°C. 6 min, agita, 6 min más. Bordes bien tostados.'},
+  {t:'Limón y sirve',d:'Zumo de limón fresco al sacar. El ácido equilibra el sabor. Sirve de inmediato.'},
+]},
+
+{id:'patatas-gajo',cat:'verduras',emoji:'🍟',th:'th-e',title:'Patatas gajo perfectas sin aceite',time:'20 min',temp:'190°C',serv:'4 pers',cal:'180 kcal',diff:'Fácil',
+tags:['Vegano','Aperitivo'],
+desc:'La receta más buscada de toda la web. Crujientes por fuera, esponjosas por dentro. El secreto: el remojo previo.',
+ingredients:[
+  {a:'4 ud',n:'Patatas medianas',q:'patatas+medianas+para+freír'},
+  {a:'1 cdita',n:'Pimentón dulce',q:'pimentón+dulce+especias'},
+  {a:'1 cdita',n:'Ajo en polvo',q:'ajo+en+polvo+especias'},
+  {a:'1 cdita',n:'Orégano seco',q:'orégano+seco+especias'},
+  {a:'Sal',n:'al gusto',q:'sal+fina+cocina'},
+],
+steps:[
+  {t:'Corta y remoja',d:'Corta en gajos (sin pelar). Pon en agua fría 20-30 minutos. Seca COMPLETAMENTE.',tip:'💡 EL TRUCO: el remojo elimina almidón = crujiente máximo.'},
+  {t:'Aliña sin aceite',d:'Mezcla los gajos secos con las especias y sal. Sin aceite necesario.'},
+  {t:'Precalienta a 190°C',d:'3 minutos obligatorios.'},
+  {t:'Cocina en una capa',d:'Sin superponer. 10 minutos, agita, 8-10 más. Una capa por tanda.',tip:'⚠️ Si las amontones quedan blandas. Haz dos tandas si hace falta.'},
+  {t:'Sirve inmediatamente',d:'Con alioli, ketchup o salsa brava. Calientes son otra cosa.'},
+]},
+
+{id:'coliflor-especiada',cat:'verduras',emoji:'🥗',th:'th-d',title:'Coliflor especiada al estilo indio',time:'15 min',temp:'195°C',serv:'2 pers',cal:'100 kcal',diff:'Fácil',
+tags:['Vegano','Especiado'],
+desc:'La coliflor se transforma completamente con estas especias. Los bordes tostados y crujientes son adictivos.',
+ingredients:[
+  {a:'1 ud',n:'Coliflor mediana',q:'coliflor+fresca'},
+  {a:'2 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'1 cda',n:'Curry en polvo',q:'curry+en+polvo+especias'},
+  {a:'1 cdita',n:'Cúrcuma',q:'cúrcuma+molida+especias'},
+  {a:'Yogur natural',n:'para servir',q:'yogur+natural+para+servir'},
+],
+steps:[
+  {t:'Corta en floretes',d:'Corta la coliflor en floretes medianos de tamaño similar.'},
+  {t:'Aliña con especias',d:'Mezcla con aceite, curry, cúrcuma, sal y pimienta. Cubre bien todos los floretes.'},
+  {t:'Cocina 15 minutos',d:'Precalienta a 195°C. 8 min, agita, 7 min. Debe haber manchas tostadas oscuras.',tip:'💡 Las manchas oscuras no son quemado: son caramelización. Son el mejor trozo.'},
+  {t:'Sirve con yogur',d:'Con yogur natural con menta y limón. También va muy bien con cuscús.'},
+]},
+
+{id:'berenjena-miel',cat:'verduras',emoji:'🍆',th:'th-d',title:'Berenjenas con miel de caña',time:'16 min',temp:'190°C',serv:'2 pers',cal:'130 kcal',diff:'Fácil',
+tags:['Vegano','Dulce-salado'],
+desc:'Las berenjenas fritas de Málaga pero sin aceite. Con la miel de caña encima son pura adicción.',
+ingredients:[
+  {a:'2 ud',n:'Berenjenas medianas',q:'berenjenas+frescas'},
+  {a:'80 g',n:'Harina',q:'harina+de+trigo'},
+  {a:'Spray de aceite',n:'generoso',q:'spray+aceite+cocina'},
+  {a:'3 cdas',n:'Miel de caña',q:'miel+de+caña+melaza'},
+  {a:'Sal',n:'al gusto',q:'sal+fina+cocina'},
+],
+steps:[
+  {t:'Corta y sala',d:'Corta en rodajas de 0.8 cm. Pon sal encima 15 min para que suelten el amargor. Seca con papel.'},
+  {t:'Enharina',d:'Pasa por harina sacudiendo el exceso. El rebozado ligero da el crujiente.'},
+  {t:'Spray de aceite',d:'Rocía generosamente con aceite spray por ambos lados.',tip:'💡 Sin spray o aceite no dorarán. Sé generoso aquí.'},
+  {t:'Cocina 16 minutos',d:'Precalienta a 190°C. 8 min por lado. Deben estar bien doradas.'},
+  {t:'Sirve con miel',d:'Miel de caña por encima al servir. Flor de sal opcional.'},
+]},
+
+{id:'pimientos-padron',cat:'verduras',emoji:'🫑',th:'th-d',title:'Pimientos del Padrón sin aceite',time:'8 min',temp:'200°C',serv:'2 pers',cal:'50 kcal',diff:'Fácil',
+tags:['Vegano','Aperitivo','Rápido'],
+desc:'La tapa más fácil del mundo. En la airfryer quedan con la piel ampollada perfecta. Sal gorda al final.',
+ingredients:[
+  {a:'300 g',n:'Pimientos del Padrón',q:'pimientos+del+padron+frescos'},
+  {a:'1 cda',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'Sal en escamas',n:'generosa',q:'sal+en+escamas+maldon'},
+],
+steps:[
+  {t:'Seca y aliña',d:'Lava y seca bien los pimientos. Mezcla con el aceite.'},
+  {t:'Cocina 8 minutos',d:'Precalienta a 200°C. Cocina 8 min agitando a mitad. La piel debe ampollar y oscurecerse.',tip:'💡 Los últimos 2 minutos sube a 220°C para que ampollen más.'},
+  {t:'Sal en escamas y listo',d:'Sal gorda o en escamas generosa al servir. Comer enseguida en tapa.'},
+]},
+
+{id:'esparragos-parmesano',cat:'verduras',emoji:'🌿',th:'th-d',title:'Espárragos trigueros con parmesano',time:'10 min',temp:'195°C',serv:'2 pers',cal:'80 kcal',diff:'Fácil',
+tags:['Vegetariano','Guarnición'],
+desc:'Espárragos con puntas crujientes y un crujiente de parmesano que los hace irresistibles. 3 ingredientes.',
+ingredients:[
+  {a:'1 manojo',n:'Espárragos trigueros',q:'espárragos+trigueros+frescos'},
+  {a:'2 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'40 g',n:'Parmesano rallado',q:'queso+parmesano+rallado'},
+  {a:'1 diente',n:'Ajo',q:'ajo+fresco'},
+  {a:'Limón',n:'para terminar',q:'limones+frescos'},
+],
+steps:[
+  {t:'Rompe el extremo duro',d:'Dobla cada espárrago y se romperá por donde es tierno. Desecha la parte dura.'},
+  {t:'Aliña',d:'Mezcla con aceite, ajo laminado y sal.'},
+  {t:'Cocina 8 minutos',d:'Precalienta a 195°C. Cocina 8 minutos agitando a mitad.'},
+  {t:'Parmesano y gratina',d:'Espolvorea parmesano rallado y cocina 2 minutos más hasta que gratine.',tip:'💡 Las puntas crujientes con parmesano tostado son lo mejor del plato.'},
+  {t:'Limón y sirve',d:'Ralladura y zumo de limón al servir.'},
+]},
+
+{id:'calabacin-hierbas',cat:'verduras',emoji:'🥒',th:'th-d',title:'Calabacín con hierbas provenzales',time:'12 min',temp:'190°C',serv:'2 pers',cal:'70 kcal',diff:'Fácil',
+tags:['Vegano','Guarnición','Rápido'],
+desc:'Calabacín tierno y aromático. La guarnición más rápida y versátil que puedes hacer con la airfryer.',
+ingredients:[
+  {a:'2 ud',n:'Calabacines medianos',q:'calabacines+frescos'},
+  {a:'2 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'2 cditas',n:'Hierbas provenzales',q:'hierbas+provenzales+mezcla+especias'},
+  {a:'2 dientes',n:'Ajo',q:'ajo+fresco'},
+  {a:'Queso feta',n:'para servir (opcional)',q:'queso+feta+griego'},
+],
+steps:[
+  {t:'Corta el calabacín',d:'En rodajas de 1 cm o en medias lunas. Tamaño uniforme para cocción pareja.'},
+  {t:'Aliña',d:'Mezcla con aceite, hierbas, ajo laminado, sal y pimienta.'},
+  {t:'Cocina 12 minutos',d:'Precalienta a 190°C. 6 min, agita, 6 min. Debe quedar dorado pero no blando.',tip:'💡 El calabacín suelta agua: no lo amontones o se cocerá en vez de asarse.'},
+  {t:'Sirve con feta',d:'Desmenuza feta encima si lo usas. Excelente como guarnición de pescado o pollo.'},
+]},
+
+{id:'champinones-rellenos',cat:'verduras',emoji:'🍄',th:'th-d',title:'Champiñones rellenos de queso',time:'14 min',temp:'185°C',serv:'2 pers',cal:'180 kcal',diff:'Media',
+tags:['Vegetariano','Aperitivo'],
+desc:'Champiñones con relleno de queso fundido y hierbas. Elegantes como aperitivo y listos en 14 minutos.',
+ingredients:[
+  {a:'8 ud',n:'Champiñones grandes',q:'champiñones+portobello+grandes'},
+  {a:'100 g',n:'Queso crema',q:'queso+crema+philadelphia'},
+  {a:'50 g',n:'Queso rallado (mezcla)',q:'queso+rallado+fundir+mezcla'},
+  {a:'2 dientes',n:'Ajo picado',q:'ajo+fresco'},
+  {a:'Cebollino',n:'fresco picado',q:'cebollino+fresco'},
+],
+steps:[
+  {t:'Limpia y quita el pie',d:'Limpia con papel húmedo (no laves bajo el grifo). Quita el pie y pica fino para el relleno.'},
+  {t:'Prepara el relleno',d:'Mezcla queso crema, pie picado, ajo, cebollino, sal y pimienta.'},
+  {t:'Rellena los champiñones',d:'Pon el relleno con cuchara. Termina con queso rallado por encima.',tip:'💡 No escatimes el relleno: al fundirse reduce.'},
+  {t:'Cocina 14 minutos',d:'Precalienta a 185°C. Cocina hasta que el queso burbujee y dore.'},
+  {t:'Sirve calientes',d:'Con un hilo de aceite de trufa si tienes o simplemente con perejil fresco.'},
+]},
+
+{id:'tomates-cherry',cat:'verduras',emoji:'🍅',th:'th-d',title:'Tomates cherry confitados',time:'20 min',temp:'160°C',serv:'4 pers',cal:'80 kcal',diff:'Fácil',
+tags:['Vegano','Guarnición'],
+desc:'Los tomates cherry en la airfryer se concentran, caramelizan y se vuelven una bomba de sabor umami.',
+ingredients:[
+  {a:'400 g',n:'Tomates cherry',q:'tomates+cherry+frescos'},
+  {a:'3 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'4 dientes',n:'Ajo',q:'ajo+fresco'},
+  {a:'Tomillo fresco',n:'o seco',q:'tomillo+fresco+hierbas'},
+  {a:'1 cdita',n:'Azúcar',q:'azúcar+blanca'},
+],
+steps:[
+  {t:'Aliña los tomates',d:'Mezcla los tomates enteros con aceite, ajo aplastado, tomillo, azúcar, sal y pimienta.'},
+  {t:'Cocina lento',d:'Precalienta a 160°C (temperatura baja). Cocina 20 minutos agitando a mitad.',tip:'💡 La temperatura baja es el truco: confitan en vez de asarse. Quedan melosos.'},
+  {t:'Sirve',d:'Sobre tostadas con ricotta, en pasta, con queso burrata o como guarnición de carne.'},
+]},
+
+{id:'alcachofas-crujientes',cat:'verduras',emoji:'🌿',th:'th-d',title:'Alcachofas crujientes al limón',time:'18 min',temp:'190°C',serv:'2 pers',cal:'110 kcal',diff:'Media',
+tags:['Vegano','Guarnición'],
+desc:'Las alcachofas más crujientes que hayas probado. Las hojas exteriores quedan como chips y el corazón tierno.',
+ingredients:[
+  {a:'4 ud',n:'Alcachofas medianas',q:'alcachofas+frescas'},
+  {a:'2 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'2 ud',n:'Limones',q:'limones+frescos'},
+  {a:'3 dientes',n:'Ajo',q:'ajo+fresco'},
+  {a:'Sal y pimienta',n:'al gusto',q:'sal+y+pimienta+cocina'},
+],
+steps:[
+  {t:'Limpia las alcachofas',d:'Quita las hojas exteriores duras, corta el tallo y la punta. Frota con limón para evitar que oscurezcan.'},
+  {t:'Abre y aliña',d:'Corta por la mitad o en cuartos. Aliña con aceite, ajo, limón, sal y pimienta entre las hojas.'},
+  {t:'Cocina 18 minutos',d:'Precalienta a 190°C. 10 min boca abajo, 8 min boca arriba.',tip:'💡 Primero boca abajo para que se cocinen bien por dentro.'},
+  {t:'Sirve con alioli',d:'Con alioli de limón o simplemente con aceite de oliva crudo.'},
+]},
+
+// ══ APERITIVOS ═════════════════════════════════════════
+{id:'croquetas-jamon',cat:'aperitivos',emoji:'🫓',th:'th-e',title:'Croquetas de jamón crujientes',time:'12 min',temp:'200°C',serv:'4 pers',cal:'220 kcal',diff:'Media',
+tags:['Clásico','Familiar'],
+desc:'Las croquetas perfectas: exterior crujiente que cruje, interior cremoso que se derrama. Sin aceite a rebosar.',
+ingredients:[
+  {a:'Croquetas',n:'caseras o compradas congeladas',q:'croquetas+jamón+congeladas+calidad'},
+  {a:'Spray de aceite',n:'generoso',q:'spray+aceite+cocina'},
+  {a:'Pan rallado',n:'extra (opcional)',q:'pan+rallado+fino'},
+],
+steps:[
+  {t:'Prepara las croquetas',d:'Si son congeladas, no necesitas descongelar. Si son caseras, que estén bien frías.',tip:'💡 Las croquetas congeladas salen perfectas en airfryer, mejor que en aceite.'},
+  {t:'Spray de aceite',d:'Rocía generosamente con spray de aceite por todos los lados.'},
+  {t:'Cocina 12 minutos',d:'Precalienta a 200°C. 6 min, da la vuelta con cuidado, spray de nuevo, 6 min más.'},
+  {t:'Sirve calientes',d:'Recién sacadas, que el interior esté bien caliente y cremoso.'},
+]},
+
+{id:'patatas-bravas',cat:'aperitivos',emoji:'🥔',th:'th-e',title:'Patatas bravas con salsa casera',time:'22 min',temp:'200°C',serv:'4 pers',cal:'220 kcal',diff:'Fácil',
+tags:['Clásico','Vegano'],
+desc:'Las patatas bravas más crujientes de tu vida, con la salsa brava picante que las hace adictivas.',
+ingredients:[
+  {a:'600 g',n:'Patatas',q:'patatas+para+freír'},
+  {a:'2 cdas',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'200 ml',n:'Tomate frito',q:'tomate+frito+casero+bote'},
+  {a:'1 cda',n:'Pimentón picante',q:'pimentón+picante+especias'},
+  {a:'Tabasco',n:'al gusto',q:'tabasco+salsa+picante'},
+],
+steps:[
+  {t:'Corta y remoja',d:'Cubos de 2-3 cm. Remoja 20 min en agua fría. Seca perfectamente.'},
+  {t:'Aliña con aceite',d:'Mezcla con aceite, sal y pimienta. Bien cubiertos.'},
+  {t:'Cocina 22 minutos',d:'Precalienta a 200°C. 12 min, agita, 10 min. Bien dorados y crujientes.',tip:'💡 Para más crujiente: sube a 210°C los últimos 3 minutos.'},
+  {t:'Prepara la brava',d:'Calienta el tomate frito con pimentón picante y tabasco. Ajusta el picante a tu gusto.'},
+  {t:'Sirve',d:'Patatas + salsa brava caliente por encima. Alioli opcional al lado.'},
+]},
+
+{id:'halloumi',cat:'aperitivos',emoji:'🧀',th:'th-e',title:'Halloumi a la plancha con miel',time:'8 min',temp:'200°C',serv:'2 pers',cal:'280 kcal',diff:'Fácil',
+tags:['Vegetariano','Rápido'],
+desc:'El halloumi se carameliza perfectamente en la airfryer. Con miel y pimiento rojo es una tapa de 5 estrellas.',
+ingredients:[
+  {a:'250 g',n:'Queso halloumi',q:'queso+halloumi+chipriota'},
+  {a:'1 cda',n:'Aceite de oliva',q:'aceite+de+oliva+virgen+extra'},
+  {a:'1 cda',n:'Miel',q:'miel+natural'},
+  {a:'Pimiento rojo',n:'en tiras (opcional)',q:'pimientos+rojos+frescos'},
+  {a:'Orégano',n:'al gusto',q:'orégano+seco+especias'},
+],
+steps:[
+  {t:'Corta el halloumi',d:'En lonchas de 1 cm o en dados. Seca con papel.'},
+  {t:'Unta con aceite',d:'Pincela con aceite cada lado.'},
+  {t:'Cocina 8 minutos',d:'Precalienta a 200°C. 4 min por lado hasta que esté bien dorado.',tip:'💡 El halloumi no se funde: aguanta bien el calor. Cuanto más dorado, mejor.'},
+  {t:'Miel y orégano',d:'Miel por encima al servir con orégano. Los pimientos asados son el complemento perfecto.'},
+]},
+
+{id:'aros-cebolla',cat:'aperitivos',emoji:'🧅',th:'th-e',title:'Aros de cebolla crujientes',time:'12 min',temp:'200°C',serv:'3 pers',cal:'190 kcal',diff:'Fácil',
+tags:['Vegetariano','Aperitivo'],
+desc:'Aros de cebolla que crujen al morderlos sin bañarlos en aceite. El truco es el doble empanado.',
+ingredients:[
+  {a:'2 ud',n:'Cebollas grandes',q:'cebollas+frescas'},
+  {a:'80 g',n:'Harina',q:'harina+de+trigo'},
+  {a:'100 g',n:'Pan rallado panko',q:'pan+rallado+panko+japones'},
+  {a:'2 ud',n:'Huevos',q:'huevos+frescos'},
+  {a:'Spray de aceite',n:'generoso',q:'spray+aceite+cocina'},
+],
+steps:[
+  {t:'Corta en aros',d:'Aros de 1 cm de grosor. Separa los aros y sécalos.'},
+  {t:'Triple empanado',d:'Harina (sal y pimienta) → huevo batido → panko. Presiona el panko.',tip:'💡 El panko japonés es clave. El pan rallado normal no da el mismo crujiente.'},
+  {t:'Spray generoso',d:'Rocía muy bien con aceite spray por ambos lados.'},
+  {t:'Cocina 12 minutos',d:'Precalienta a 200°C. 6 min, da la vuelta con cuidado, 6 min. Bien dorados.'},
+  {t:'Salsa a elegir',d:'Con salsa ranch, sriracha mayo o simplemente ketchup.'},
+]},
+
+{id:'rollitos-primavera',cat:'aperitivos',emoji:'🥢',th:'th-e',title:'Rollitos de primavera crujientes',time:'14 min',temp:'195°C',serv:'2 pers',cal:'240 kcal',diff:'Media',
+tags:['Asiático','Aperitivo'],
+desc:'Rollitos crujientes por fuera, con relleno de verduras salteadas. Sin aceite hirviendo y en 14 minutos.',
+ingredients:[
+  {a:'8 ud',n:'Obleas de rollito',q:'obleas+rollitos+primavera+pasta'},
+  {a:'150 g',n:'Col o repollo',q:'col+repollo+fresco'},
+  {a:'2 ud',n:'Zanahorias',q:'zanahorias+frescas'},
+  {a:'2 cdas',n:'Salsa de soja',q:'salsa+de+soja'},
+  {a:'Spray de aceite',n:'generoso',q:'spray+aceite+cocina'},
+],
+steps:[
+  {t:'Prepara el relleno',d:'Saltea col y zanahoria rallada con soja, ajo y jengibre 5 min. Deja enfriar.'},
+  {t:'Rellena y cierra',d:'Pon relleno en cada oblea, dobla los lados y enrolla apretado. Sella con agua o harina disuelta.',tip:'💡 El relleno debe estar frío o la oblea se empapa.'},
+  {t:'Spray generoso',d:'Rocía bien con aceite spray por todas las caras.'},
+  {t:'Cocina 14 minutos',d:'Precalienta a 195°C. 7 min, da la vuelta, 7 min. Bien dorados y crujientes.'},
+  {t:'Sirve con salsa',d:'Con salsa agridulce, soja o salsa de cacahuete.'},
+]},
+
+{id:'mini-pizzas',cat:'aperitivos',emoji:'🍕',th:'th-e',title:'Mini pizzas de pan de molde',time:'8 min',temp:'190°C',serv:'2 pers',cal:'280 kcal',diff:'Fácil',
+tags:['Para niños','Rápido'],
+desc:'La pizza más rápida del mundo. En 8 minutos tienes una mini pizza crujiente con queso fundido.',
+ingredients:[
+  {a:'4 rebanadas',n:'Pan de molde',q:'pan+de+molde+grueso'},
+  {a:'4 cdas',n:'Tomate frito',q:'tomate+frito+casero+bote'},
+  {a:'100 g',n:'Mozzarella rallada',q:'mozzarella+rallada+pizza'},
+  {a:'Al gusto',n:'Toppings (jamón, atún, champiñones...)',q:'jamón+york+lonchas'},
+  {a:'Orégano',n:'seco',q:'orégano+seco+especias'},
+],
+steps:[
+  {t:'Prepara las bases',d:'Extiende tomate frito sobre cada rebanada. No demasiado o el pan se empapará.'},
+  {t:'Añade los toppings',d:'Coloca los ingredientes y cubre con mozzarella. Orégano por encima.'},
+  {t:'Cocina 8 minutos',d:'Precalienta a 190°C. Sin precalentar si tienes prisa, añade 2 min más.'},
+  {t:'Sirve inmediatamente',d:'El queso burbujea y el pan queda crujiente. Mejor recién hechas.'},
+]},
+
+{id:'nachos-queso',cat:'aperitivos',emoji:'🌮',th:'th-e',title:'Nachos con queso fundido',time:'6 min',temp:'180°C',serv:'2 pers',cal:'350 kcal',diff:'Fácil',
+tags:['Para niños','Aperitivo'],
+desc:'Nachos crujientes con queso fundido a la perfección. Para las noches de peli o el partido del domingo.',
+ingredients:[
+  {a:'150 g',n:'Nachos (tortilla chips)',q:'nachos+tortilla+chips+maíz'},
+  {a:'150 g',n:'Queso cheddar rallado',q:'queso+cheddar+rallado'},
+  {a:'Jalapeños',n:'en conserva (opcional)',q:'jalapeños+en+conserva'},
+  {a:'Guacamole',n:'para servir',q:'guacamole+aguacates'},
+  {a:'Crema agria',n:'o yogur griego',q:'crema+agria+o+yogur+griego'},
+],
+steps:[
+  {t:'Extiende los nachos',d:'En una bandeja apta para airfryer o en papel de horno, extiende los nachos en una capa.'},
+  {t:'Cubre con queso',d:'Queso rallado por encima, jalapeños si los usas.'},
+  {t:'Cocina 6 minutos',d:'Precalienta a 180°C. 6 min hasta que el queso burbujee y los bordes de los nachos estén dorados.',tip:'💡 Vigila al minuto 5: el queso puede pasarse de tostado rápidamente.'},
+  {t:'Sirve con guacamole',d:'Guacamole y crema agria al lado para mojar.'},
+]},
+
+{id:'empanadillas-atun',cat:'aperitivos',emoji:'🥟',th:'th-e',title:'Empanadillas de atún crujientes',time:'14 min',temp:'190°C',serv:'4 pers',cal:'260 kcal',diff:'Fácil',
+tags:['Clásico','Para niños'],
+desc:'Las empanadillas más crujientes sin freirlas. La masa queda dorada y crujiente, el relleno de atún jugoso.',
+ingredients:[
+  {a:'16 ud',n:'Obleas de empanadilla',q:'obleas+empanadilla+masa'},
+  {a:'2 latas',n:'Atún en aceite',q:'atún+en+aceite+lata'},
+  {a:'3 cdas',n:'Tomate frito',q:'tomate+frito+casero+bote'},
+  {a:'1 ud',n:'Huevo (para pintar)',q:'huevos+frescos'},
+  {a:'Aceitunas picadas',n:'opcional',q:'aceitunas+verdes+sin+hueso'},
+],
+steps:[
+  {t:'Prepara el relleno',d:'Escurre el atún, mezcla con tomate frito y aceitunas picadas si las usas. Bien escurrido para que no moje la masa.'},
+  {t:'Rellena y cierra',d:'Una cucharada de relleno en cada oblea, dobla en semicírculo y sella los bordes con un tenedor.',tip:'💡 Pinza bien los bordes o se abrirán y el relleno se saldrá.'},
+  {t:'Pinta con huevo',d:'Pincela con huevo batido por encima para que doren.'},
+  {t:'Cocina 14 minutos',d:'Precalienta a 190°C. 7 min, da la vuelta, pinta el otro lado con huevo, 7 min.'},
+  {t:'Sirve calientes',d:'Con tomate frito como salsa para mojar.'},
+]},
+
+// ══ POSTRES ════════════════════════════════════════════
+{id:'donuts',cat:'postres',emoji:'🍩',th:'th-f',title:'Donuts esponjosos sin freír',time:'15 min + reposo',temp:'170°C',serv:'6 uds',cal:'220 kcal',diff:'Media',
+tags:['Para niños','Postre'],
+desc:'Todo el sabor del donut de siempre sin un litro de aceite hirviendo. Esponjosos por dentro, dorados por fuera.',
+ingredients:[
+  {a:'200 g',n:'Harina de trigo',q:'harina+de+trigo+fuerza'},
+  {a:'80 g',n:'Azúcar',q:'azúcar+blanca'},
+  {a:'100 ml',n:'Leche tibia',q:'leche+entera+fresca'},
+  {a:'40 g',n:'Mantequilla',q:'mantequilla+sin+sal'},
+  {a:'7 g',n:'Levadura de panadería',q:'levadura+seca+panadería'},
+  {a:'1 ud',n:'Huevo',q:'huevos+frescos'},
+  {a:'Azúcar glas + canela',n:'para rebozar',q:'azúcar+glas+tamizado'},
+],
+steps:[
+  {t:'Activa la levadura',d:'Leche tibia (no caliente) + levadura + 1 cdita azúcar. Espera 10 min hasta que espume.',tip:'💡 Si no espuma, la levadura está muerta. Usa levadura nueva.'},
+  {t:'Amasa',d:'Mezcla harina, azúcar, sal, huevo, mantequilla y la mezcla de levadura. Amasa 10 min hasta masa suave y elástica.'},
+  {t:'Fermenta 1 hora',d:'Cubre el bol y deja en lugar cálido hasta que doble el volumen.'},
+  {t:'Da forma',d:'Estira a 1 cm. Corta círculos con un vaso. Agujero central con tapón o dedo. Reposa 20 min más.'},
+  {t:'Cocina 5-6 minutos',d:'Precalienta a 170°C. No abras los primeros 4 min.',tip:'💡 Temperatura baja para que se cocinen por dentro sin quemarse fuera.'},
+  {t:'Azúcar con canela',d:'Inmediatamente al salir, pasa por azúcar+canela o glasea con azúcar glas disuelta en leche.'},
+]},
+
+{id:'churros-sin-aceite',cat:'postres',emoji:'🍡',th:'th-f',title:'Churros sin aceite con chocolate',time:'12 min',temp:'190°C',serv:'4 pers',cal:'180 kcal',diff:'Media',
+tags:['Clásico','Para niños'],
+desc:'Churros dorados y crujientes sin litros de aceite. Con chocolate a la taza son tan buenos como los de churrería.',
+ingredients:[
+  {a:'200 g',n:'Harina',q:'harina+de+trigo'},
+  {a:'250 ml',n:'Agua',q:'agua+mineral'},
+  {a:'1 pizca',n:'Sal',q:'sal+fina+cocina'},
+  {a:'Spray de aceite',n:'generoso',q:'spray+aceite+cocina'},
+  {a:'Azúcar + canela',n:'para rebozar',q:'azúcar+blanca'},
+  {a:'200 g',n:'Chocolate negro',q:'chocolate+negro+70+cocina'},
+],
+steps:[
+  {t:'Prepara la masa',d:'Hierve el agua con la sal. Vierte sobre la harina de golpe y remueve enérgicamente hasta masa homogénea sin grumos.'},
+  {t:'Forma los churros',d:'Pon la masa en manga pastelera con boquilla de estrella. Forma churros de 10-12 cm sobre papel de horno.',tip:'💡 La boquilla de estrella es esencial: crea las ranuras que hacen crujiente el churro.'},
+  {t:'Spray generoso',d:'Rocía abundantemente con spray de aceite.'},
+  {t:'Cocina 12 minutos',d:'Precalienta a 190°C. 6 min, da la vuelta, 6 min. Bien dorados.'},
+  {t:'Azúcar y chocolate',d:'Reboza en azúcar+canela. Sirve con chocolate negro fundido con leche caliente.'},
+]},
+
+{id:'manzanas-asadas',cat:'postres',emoji:'🍎',th:'th-f',title:'Manzanas asadas con canela',time:'18 min',temp:'175°C',serv:'2 pers',cal:'140 kcal',diff:'Fácil',
+tags:['Saludable','Sin gluten'],
+desc:'El postre más sencillo del mundo y uno de los más reconfortantes. Con helado de vainilla son perfectas.',
+ingredients:[
+  {a:'2 ud',n:'Manzanas Golden',q:'manzanas+golden+frescas'},
+  {a:'2 cdas',n:'Mantequilla',q:'mantequilla+sin+sal'},
+  {a:'2 cdas',n:'Azúcar moreno',q:'azúcar+moreno'},
+  {a:'1 cdita',n:'Canela molida',q:'canela+molida+especias'},
+  {a:'Helado de vainilla',n:'para servir',q:'helado+vainilla'},
+],
+steps:[
+  {t:'Prepara las manzanas',d:'Quita el corazón con un descorazonador dejando la base. Haz cortes poco profundos en la piel como cuadrícula.'},
+  {t:'Rellena',d:'En el hueco pon mantequilla, azúcar moreno y canela. Que desborde un poco.'},
+  {t:'Cocina 18 minutos',d:'Precalienta a 175°C. Cocina hasta que estén tiernas y caramelizadas.',tip:'💡 Para manzanas más grandes, añade 5 minutos.'},
+  {t:'Sirve calientes',d:'Con helado de vainilla encima que se derrita con el calor de la manzana.'},
+]},
+
+{id:'brownie-express',cat:'postres',emoji:'🍫',th:'th-f',title:'Brownie exprés individual',time:'12 min',temp:'165°C',serv:'2 pers',cal:'380 kcal',diff:'Media',
+tags:['Chocolate','Para niños'],
+desc:'El brownie de chocolate perfecto: crujiente por fuera, fundente por dentro. En moldes individuales.',
+ingredients:[
+  {a:'100 g',n:'Chocolate negro 70%',q:'chocolate+negro+70+postres'},
+  {a:'80 g',n:'Mantequilla',q:'mantequilla+sin+sal'},
+  {a:'2 ud',n:'Huevos',q:'huevos+frescos'},
+  {a:'80 g',n:'Azúcar',q:'azúcar+blanca'},
+  {a:'40 g',n:'Harina',q:'harina+de+trigo'},
+  {a:'Nueces',n:'troceadas (opcional)',q:'nueces+troceadas+bolsa'},
+],
+steps:[
+  {t:'Funde el chocolate',d:'Funde el chocolate con la mantequilla al baño María o en microondas a intervalos de 30s.'},
+  {t:'Mezcla',d:'Añade azúcar, mezcla. Añade los huevos de uno en uno. Incorpora la harina tamizada y las nueces.',tip:'💡 No mezcles demasiado con la harina o perderás la textura fundente.'},
+  {t:'Rellena los moldes',d:'En moldes individuales de silicona aptos para airfryer. Llena 3/4.'},
+  {t:'Cocina 12 minutos',d:'Precalienta a 165°C. El centro debe quedar ligeramente temblón: eso es el fundente.'},
+  {t:'Sirve con helado',d:'Templado con helado de vainilla o nata montada.'},
+]},
+
+{id:'magdalenas',cat:'postres',emoji:'🧁',th:'th-f',title:'Magdalenas esponjosas de limón',time:'14 min',temp:'165°C',serv:'8 uds',cal:'200 kcal',diff:'Media',
+tags:['Desayuno','Postre'],
+desc:'Magdalenas de limón con copete perfecto. La airfryer las hace más uniformes que el horno convencional.',
+ingredients:[
+  {a:'200 g',n:'Harina',q:'harina+de+trigo'},
+  {a:'150 g',n:'Azúcar',q:'azúcar+blanca'},
+  {a:'2 ud',n:'Huevos',q:'huevos+frescos'},
+  {a:'100 ml',n:'Aceite de girasol',q:'aceite+de+girasol+cocina'},
+  {a:'100 ml',n:'Leche',q:'leche+entera+fresca'},
+  {a:'1 ud',n:'Limón (ralladura)',q:'limones+frescos'},
+  {a:'1 sobre',n:'Levadura química',q:'levadura+quimica+royal'},
+],
+steps:[
+  {t:'Mezcla húmedos',d:'Huevos + azúcar: bate 5 min hasta mezcla pálida. Añade aceite y leche.'},
+  {t:'Añade secos',d:'Incorpora harina tamizada con levadura y ralladura de limón. Mezcla solo hasta integrar.',tip:'💡 La masa con grumos está bien. El exceso de mezcla rompe la esponjosidad.'},
+  {t:'Refrigera 30 min',d:'Cubre y deja en nevera. El frío es lo que crea el copete característico.'},
+  {t:'Rellena y hornea',d:'Llena cápsulas 3/4. Precalienta a 165°C y hornea 14 minutos. Prueba con palillo.'},
+  {t:'Enfría antes de comer',d:'10 minutos de reposo antes de desmoldar.'},
+]},
+
+{id:'platanos-caramelizados',cat:'postres',emoji:'🍌',th:'th-f',title:'Plátanos caramelizados con ron',time:'8 min',temp:'185°C',serv:'2 pers',cal:'180 kcal',diff:'Fácil',
+tags:['Rápido','Sin gluten'],
+desc:'Los plátanos se caramelizan en 8 minutos. Con el toque de ron y canela son un postre de restaurante.',
+ingredients:[
+  {a:'2 ud',n:'Plátanos maduros',q:'plátanos+maduros'},
+  {a:'2 cdas',n:'Azúcar moreno',q:'azúcar+moreno'},
+  {a:'1 cdita',n:'Canela molida',q:'canela+molida+especias'},
+  {a:'1 cda',n:'Ron o Cointreau',q:'ron+dorado'},
+  {a:'Helado o nata',n:'para servir',q:'helado+vainilla'},
+],
+steps:[
+  {t:'Corta los plátanos',d:'Por la mitad a lo largo. Con la piel o sin ella.'},
+  {t:'Reboza en azúcar',d:'Mezcla el azúcar moreno con canela. Presiona los plátanos en la mezcla.'},
+  {t:'Rocía con ron',d:'Un poco de ron o Cointreau por encima.',tip:'💡 El alcohol se evapora pero deja el aroma.'},
+  {t:'Cocina 8 minutos',d:'Precalienta a 185°C. 8 min hasta que el azúcar burbujee y caramelice.'},
+  {t:'Sirve calientes',d:'Con helado de vainilla o nata montada. El contraste caliente-frío es espectacular.'},
+]},
+
+{id:'cookies',cat:'postres',emoji:'🍪',th:'th-f',title:'Cookies de chocolate chip',time:'10 min',temp:'160°C',serv:'8 uds',cal:'250 kcal',diff:'Media',
+tags:['Para niños','Chocolate'],
+desc:'Las cookies perfectas: crujientes en los bordes, blandas en el centro. El frío de la masa es el secreto.',
+ingredients:[
+  {a:'200 g',n:'Harina',q:'harina+de+trigo'},
+  {a:'125 g',n:'Mantequilla blanda',q:'mantequilla+sin+sal'},
+  {a:'100 g',n:'Azúcar moreno',q:'azúcar+moreno'},
+  {a:'1 ud',n:'Huevo',q:'huevos+frescos'},
+  {a:'150 g',n:'Chips de chocolate',q:'chips+chocolate+negro+postres'},
+  {a:'1 cdita',n:'Extracto de vainilla',q:'extracto+vainilla+cocina'},
+],
+steps:[
+  {t:'Bate mantequilla y azúcar',d:'Hasta mezcla cremosa. Añade el huevo y la vainilla.'},
+  {t:'Añade la harina',d:'Incorpora la harina tamizada y los chips de chocolate. No mezcles demasiado.'},
+  {t:'Refrigera 1 hora',d:'La masa fría es el secreto para que queden gruesas y blandas en el centro.',tip:'💡 Sin el frío, se extenderán demasiado y quedarán planas.'},
+  {t:'Forma y cocina',d:'Bolas de 50g. Aplana ligeramente. Precalienta a 160°C. Cocina 9-10 min. Deben parecer crudas al sacar.'},
+  {t:'Enfría en la bandeja',d:'No muevas hasta que estén frías: se endurecerán con el reposo y quedarán perfectas.'},
+]},
+
+{id:'tarta-queso-mini',cat:'postres',emoji:'🍰',th:'th-f',title:'Mini tartas de queso individuales',time:'20 min',temp:'150°C',serv:'4 uds',cal:'320 kcal',diff:'Media',
+tags:['Especial','Sin horno'],
+desc:'Tarta de queso cremosa y perfecta sin necesidad de horno grande. En moldes individuales se hacen en 20 min.',
+ingredients:[
+  {a:'200 g',n:'Queso crema Philadelphia',q:'queso+crema+philadelphia'},
+  {a:'100 g',n:'Nata para montar',q:'nata+montar+35%+materia+grasa'},
+  {a:'2 ud',n:'Huevos',q:'huevos+frescos'},
+  {a:'80 g',n:'Azúcar',q:'azúcar+blanca'},
+  {a:'100 g',n:'Galletas digestive',q:'galletas+digestive+base+tarta'},
+  {a:'50 g',n:'Mantequilla',q:'mantequilla+sin+sal'},
+],
+steps:[
+  {t:'Prepara la base',d:'Tritura las galletas y mezcla con mantequilla derretida. Presiona en el fondo de moldes individuales de silicona.'},
+  {t:'Prepara la crema',d:'Bate queso crema, azúcar, huevos y nata hasta mezcla homogénea y sin grumos.',tip:'💡 El queso debe estar a temperatura ambiente para que no haya grumos.'},
+  {t:'Rellena los moldes',d:'Vierte la crema sobre la base de galleta. Que quede a 1 cm del borde.'},
+  {t:'Cocina 20 minutos',d:'Precalienta a 150°C. Baja temperatura es clave. El centro debe temblar ligeramente.'},
+  {t:'Refrigera 2 horas',d:'Obligatorio dejar enfriar en nevera. La textura se consigue con el frío.'},
+]},
+
+// ══ DESAYUNOS ══════════════════════════════════════════
+{id:'tostadas-francesas',cat:'desayunos',emoji:'🍞',th:'th-g',title:'Tostadas francesas crujientes',time:'10 min',temp:'180°C',serv:'2 pers',cal:'280 kcal',diff:'Fácil',
+tags:['Dulce','Desayuno'],
+desc:'Las tostadas francesas más crujientes que hayas hecho. Sin mantequilla en sartén ni salpicaduras.',
+ingredients:[
+  {a:'4 rebanadas',n:'Pan brioche o de molde grueso',q:'pan+brioche+rebanadas'},
+  {a:'2 ud',n:'Huevos',q:'huevos+frescos'},
+  {a:'80 ml',n:'Leche',q:'leche+entera+fresca'},
+  {a:'1 cdita',n:'Canela',q:'canela+molida+especias'},
+  {a:'Sirope de arce',n:'y frutos rojos para servir',q:'sirope+arce+maple+syrup'},
+],
+steps:[
+  {t:'Prepara la mezcla',d:'Bate huevos con leche y canela.'},
+  {t:'Empapa el pan',d:'Sumerge cada rebanada en la mezcla 30 segundos por cada lado.',tip:'💡 El pan brioche absorbe mejor la mezcla y queda más esponjoso.'},
+  {t:'Spray de aceite',d:'Rocía la cesta con spray de aceite.'},
+  {t:'Cocina 10 minutos',d:'Precalienta a 180°C. 5 min por lado hasta dorado.'},
+  {t:'Sirve',d:'Con sirope de arce, frutos rojos y un poco de azúcar glas.'},
+]},
+
+{id:'bacon-crujiente',cat:'desayunos',emoji:'🥓',th:'th-g',title:'Bacon perfectamente crujiente',time:'8 min',temp:'200°C',serv:'2 pers',cal:'180 kcal',diff:'Fácil',
+tags:['Rápido','Sin gluten'],
+desc:'El bacon más crujiente y sin que la cocina se llene de humo. Sin sartén, sin grasa salpicando. Perfecto siempre.',
+ingredients:[
+  {a:'8 lonchas',n:'Bacon ahumado',q:'bacon+ahumado+lonchas'},
+],
+steps:[
+  {t:'Coloca el bacon',d:'En la cesta de la airfryer, las lonchas pueden solaparse un poco ya que se reducen.',tip:'💡 No necesitas aceite. El bacon ya tiene grasa suficiente.'},
+  {t:'Cocina 8 minutos',d:'Precalienta a 200°C. 4 min, da la vuelta, 4 min más. Para más crujiente, añade 2 min.'},
+  {t:'Escurre y sirve',d:'Sobre papel de cocina para quitar el exceso de grasa. Sirve inmediatamente.'},
+  {t:'El jugo',d:'Guarda la grasa que cae para freír huevos o añadir sabor a otros platos.'},
+]},
+
+{id:'granola-casera',cat:'desayunos',emoji:'🌾',th:'th-g',title:'Granola casera crujiente',time:'15 min',temp:'155°C',serv:'6 pers',cal:'220 kcal',diff:'Fácil',
+tags:['Saludable','Vegano'],
+desc:'La granola más crujiente del mundo, con el toque de miel y aceite de coco. Infinitamente mejor que la comprada.',
+ingredients:[
+  {a:'300 g',n:'Copos de avena',q:'copos+de+avena+gruesos'},
+  {a:'60 g',n:'Miel o sirope de arce',q:'miel+natural'},
+  {a:'3 cdas',n:'Aceite de coco',q:'aceite+de+coco+virgen'},
+  {a:'60 g',n:'Almendras o nueces',q:'almendras+crudas+sin+sal'},
+  {a:'1 cdita',n:'Canela',q:'canela+molida+especias'},
+],
+steps:[
+  {t:'Mezcla todo',d:'Combina los copos de avena, frutos secos, miel, aceite de coco y canela. Mezcla bien.'},
+  {t:'Cocina a temperatura baja',d:'Precalienta a 155°C (temperatura baja para que no se queme). Cocina 8 min, remueve bien.',tip:'💡 Remueve CADA 5 MINUTOS o se quemará en los bordes y quedará cruda en el centro.'},
+  {t:'Termina la cocción',d:'Otros 7 minutos removiendo. Quedará blanda al sacar y se crujirá al enfriar.'},
+  {t:'Enfría SIN tocar',d:'Extiende sobre papel y deja enfriar completamente sin tocar. El crujiente se forma al enfriar.',tip:'💡 El error más común: tocarlo caliente. Si lo tocas, no queda en grumos crujientes.'},
+  {t:'Añade frutas secas',d:'Una vez fría, añade pasas, arándanos o lo que quieras. Conserva en tarro hermético 2 semanas.'},
+]},
+
+{id:'tortitas-avena',cat:'desayunos',emoji:'🥞',th:'th-g',title:'Tortitas de avena sin voltear',time:'10 min',temp:'170°C',serv:'2 pers',cal:'250 kcal',diff:'Fácil',
+tags:['Saludable','Desayuno'],
+desc:'Tortitas esponjosas que se hacen solas sin voltear y sin limpiar la sartén. La airfryer las hace perfectas.',
+ingredients:[
+  {a:'100 g',n:'Copos de avena',q:'copos+de+avena+finos'},
+  {a:'1 ud',n:'Plátano maduro',q:'plátanos+maduros'},
+  {a:'2 ud',n:'Huevos',q:'huevos+frescos'},
+  {a:'100 ml',n:'Leche',q:'leche+entera+fresca'},
+  {a:'1 cdita',n:'Levadura química',q:'levadura+quimica+royal'},
+],
+steps:[
+  {t:'Tritura todo',d:'Pon los copos, plátano, huevos, leche y levadura en batidora. Tritura hasta masa homogénea.',tip:'💡 El plátano maduro endulza sin necesidad de azúcar.'},
+  {t:'Prepara los moldes',d:'Pon aros de emplatar o moldes de silicona en la cesta. Rocía con spray.'},
+  {t:'Vierte la masa',d:'Llena cada molde hasta la mitad. La masa subirá.'},
+  {t:'Cocina 10 minutos',d:'Precalienta a 170°C. 10 min sin abrir. Quedan perfectas sin voltear.'},
+  {t:'Sirve con fruta',d:'Con frutas frescas, sirope de arce o miel.'},
+]},
+
+{id:'croissant-perfecto',cat:'desayunos',emoji:'🥐',th:'th-g',title:'Croissant tostado perfectamente',time:'4 min',temp:'160°C',serv:'2 pers',cal:'280 kcal',diff:'Fácil',
+tags:['Rápido','Desayuno'],
+desc:'El croissant del día anterior vuelve a ser como recién hecho. La airfryer lo resucita como ningún otro método.',
+ingredients:[
+  {a:'2 ud',n:'Croissants (del día anterior)',q:'croissants+mantequilla'},
+  {a:'Mantequilla',n:'o mermelada para rellenar',q:'mermelada+fresa+o+albaricoque'},
+],
+steps:[
+  {t:'Precalienta a 160°C',d:'Solo 2 minutos. Temperatura baja para no quemar el exterior.'},
+  {t:'Mete el croissant tal cual',d:'Sin nada encima. Solo el croissant en la cesta.',tip:'💡 NO uses spray de aceite: el croissant ya tiene mantequilla y se quemarán.'},
+  {t:'Cocina 3-4 minutos',d:'Solo 3-4 min. Exterior crujiente, interior caliente y hojaldrado.'},
+  {t:'Sirve inmediatamente',d:'Con mantequilla fría o mermelada. Taza de café obligatoria.'},
+]},
+
+{id:'aguacate-tostado',cat:'desayunos',emoji:'🥑',th:'th-g',title:'Aguacate tostado con huevo',time:'10 min',temp:'190°C',serv:'2 pers',cal:'290 kcal',diff:'Fácil',
+tags:['Saludable','Sin gluten'],
+desc:'El desayuno healthy más bonito. El aguacate se calienta y el huevo se cocina en el hueco del hueso. Espectacular.',
+ingredients:[
+  {a:'1 ud',n:'Aguacate maduro',q:'aguacates+maduros'},
+  {a:'2 ud',n:'Huevos pequeños',q:'huevos+frescos+pequeños'},
+  {a:'Sal en escamas',n:'y pimienta',q:'sal+en+escamas+maldon'},
+  {a:'Pimentón ahumado',n:'para decorar',q:'pimentón+ahumado+especias'},
+  {a:'Pan',n:'tostado para acompañar',q:'pan+integral+tostadas'},
+],
+steps:[
+  {t:'Prepara el aguacate',d:'Corta por la mitad y quita el hueso. Si el hueco es pequeño, agrandalo un poco con cuchara para que quepa el huevo.'},
+  {t:'Casca el huevo dentro',d:'Con cuidado, casca un huevo en cada mitad de aguacate. La clara se puede salir un poco, es normal.',tip:'💡 Usa huevos pequeños o solo la yema si el hueco es pequeño.'},
+  {t:'Salpimenta',d:'Sal en escamas y pimienta negra encima.'},
+  {t:'Cocina 10 minutos',d:'Precalienta a 190°C. 10 min para clara cuajada y yema cremosa. 12 min para yema más hecha.'},
+  {t:'Pimentón y pan',d:'Pimentón ahumado encima y pan tostado al lado para mojar.'},
+]},
+
+{id:'pancakes-platano',cat:'desayunos',emoji:'🥞',th:'th-g',title:'Pancakes de plátano y avena',time:'12 min',temp:'170°C',serv:'2 pers',cal:'230 kcal',diff:'Fácil',
+tags:['Saludable','Sin azúcar'],
+desc:'Pancakes sin harina, sin azúcar añadido. Solo plátano, avena y huevo. Esponjosos y naturalmente dulces.',
+ingredients:[
+  {a:'2 ud',n:'Plátanos maduros grandes',q:'plátanos+maduros'},
+  {a:'80 g',n:'Copos de avena',q:'copos+de+avena+finos'},
+  {a:'2 ud',n:'Huevos',q:'huevos+frescos'},
+  {a:'1 cdita',n:'Canela',q:'canela+molida+especias'},
+  {a:'Frutos rojos',n:'para servir',q:'frutos+rojos+mezcla+congelados'},
+],
+steps:[
+  {t:'Tritura',d:'Aplasta los plátanos con tenedor o batidora. Mezcla con copos de avena, huevos y canela.'},
+  {t:'Deja reposar 5 min',d:'La avena absorbe la humedad y la masa se espesa. Es necesario.',tip:'💡 La masa debe quedar espesa, casi como puré. Si está muy líquida, añade más avena.'},
+  {t:'Coloca en moldes',d:'En moldes de silicona redondos en la cesta. Rocía con spray.'},
+  {t:'Cocina 12 minutos',d:'Precalienta a 170°C. 12 min sin voltear. El centro debe estar firme.'},
+  {t:'Sirve con frutos rojos',d:'Frutos rojos y un hilo de miel si quieres más dulce.'},
+]},
+
+{id:'tortilla-francesa',cat:'desayunos',emoji:'🍳',th:'th-g',title:'Tortilla francesa esponjosa',time:'8 min',temp:'175°C',serv:'1 pers',cal:'180 kcal',diff:'Fácil',
+tags:['Rápido','Sin gluten'],
+desc:'La tortilla más esponjosa que hayas hecho. Sin darle la vuelta, sin que se rompa. Sale perfecta siempre.',
+ingredients:[
+  {a:'3 ud',n:'Huevos',q:'huevos+frescos'},
+  {a:'2 cdas',n:'Leche',q:'leche+entera+fresca'},
+  {a:'Sal',n:'y pimienta',q:'sal+fina+cocina'},
+  {a:'Spray de aceite',n:'o mantequilla',q:'spray+aceite+cocina'},
+  {a:'Queso',n:'o jamón para rellenar (opcional)',q:'queso+emmental+rallado'},
+],
+steps:[
+  {t:'Bate los huevos',d:'Huevos + leche + sal + pimienta. Bate con energía para incorporar aire: eso da la esponjosidad.'},
+  {t:'Prepara el molde',d:'En un molde redondo pequeño (14-16 cm) apto para airfryer, pon spray de aceite.',tip:'💡 El molde pequeño es clave. En uno grande queda muy fina.'},
+  {t:'Vierte y añade relleno',d:'Vierte los huevos. Añade queso o jamón si los usas.'},
+  {t:'Cocina 8 minutos',d:'Precalienta a 175°C. 8 min. No hace falta darle la vuelta: queda perfecta.'},
+  {t:'Sirve',d:'Desliza sobre el plato. Esponjosa y perfectamente cuajada por arriba y abajo.'},
+]},
+];
+
+// ─── CURRENT STATE ──────────────────────────────────────────
+let currentCat = 'all';
+let currentSearch = '';
+
+// ─── THUMB GRADIENTS ────────────────────────────────────────
+const THUMBS_CSS = {
+  'th-a':'background:linear-gradient(135deg,#f4c574,#e8913a)',
+  'th-b':'background:linear-gradient(135deg,#f4a088,#c84820)',
+  'th-c':'background:linear-gradient(135deg,#a8d4f0,#4a8fc8)',
+  'th-d':'background:linear-gradient(135deg,#b8d4a0,#7a9e60)',
+  'th-e':'background:linear-gradient(135deg,#f9d86c,#c9932a)',
+  'th-f':'background:linear-gradient(135deg,#c8a4d8,#7a4a9e)',
+  'th-g':'background:linear-gradient(135deg,#fde68a,#f59e0b)',
+};
+
+// ─── RENDER GRID ────────────────────────────────────────────
+function renderGrid(){
+  const grid = document.getElementById('recipes-grid');
+  const count = document.getElementById('recipe-count');
+  const search = currentSearch.toLowerCase();
+  
+  const filtered = RECIPES.filter(r=>{
+    const matchCat = currentCat==='all' || r.cat===currentCat;
+    const matchSearch = !search || 
+      r.title.toLowerCase().includes(search) || 
+      r.tags.some(t=>t.toLowerCase().includes(search)) ||
+      r.desc.toLowerCase().includes(search);
+    return matchCat && matchSearch;
+  });
+
+  count.textContent = filtered.length + ' recetas encontradas';
+  
+  grid.innerHTML = filtered.map((r,i)=>`
+    <div class="rc" style="animation-delay:${i*0.04}s" onclick="openR('${r.id}')">
+      <div class="rc-thumb" style="${THUMBS_CSS[r.th]}">${r.emoji}</div>
+      <div class="rc-body">
+        <div class="rc-cats"><span class="rc-cat">${r.diff}</span></div>
+        <div class="rc-title">${r.title}</div>
+        <div class="rc-meta">
+          <span class="rc-m">⏱️ ${r.time}</span>
+          <span class="rc-m">🌡️ ${r.temp}</span>
+          <span class="rc-m">👤 ${r.serv}</span>
+        </div>
+        <div class="rc-tags">${r.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+        <div class="rc-foot">
+          <button class="ver-btn" onclick="event.stopPropagation();openR('${r.id}')">Ver receta →</button>
+          <span class="afil-dot">🛒 Amazon</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function setcat(cat, el){
+  currentCat = cat;
+  document.querySelectorAll('.cat-tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  renderGrid();
+}
+
+function filterRecipes(){
+  currentSearch = document.getElementById('search-input').value;
+  renderGrid();
+}
+
+// ─── OPEN RECIPE ────────────────────────────────────────────
+function openR(id){
+  const r = RECIPES.find(x=>x.id===id);
+  if(!r) return;
+
+  const ings = r.ingredients.map(i=>`
+    <div class="ing-i">
+      <div class="dot"></div>
+      <span class="ing-a">${i.a}</span>
+      <span class="ing-n">${i.n}</span>
+      <a class="ing-buy" href="https://www.amazon.es/s?k=${i.q}&tag=TU-TAG-AFILIADO" target="_blank">Amazon →</a>
+    </div>`).join('');
+
+  const steps = r.steps.map((s,i)=>`
+    <div class="step">
+      <div class="sn">${i+1}</div>
+      <div>
+        <div class="st-t">${s.t}</div>
+        <p class="st-d">${s.d}</p>
+        ${s.tip?`<div class="step-tip">${s.tip}</div>`:''}
+      </div>
+    </div>`).join('');
+
+  // Related recipes: same category, different id
+  const related = RECIPES.filter(x=>x.cat===r.cat && x.id!==r.id).slice(0,4);
+  const relHTML = related.map(x=>`
+    <div class="mini-c" onclick="openR('${x.id}')">
+      <div class="mini-th" style="${THUMBS_CSS[x.th]}">${x.emoji}</div>
+      <div class="mini-nm">${x.title}</div>
+    </div>`).join('');
+
+  document.getElementById('rd-content').innerHTML = `
+    <div class="rd-hero" style="${THUMBS_CSS[r.th]}">
+      ${r.emoji}
+      <div class="rd-hero-overlay"></div>
+      <div class="rd-hero-title"><h1>${r.title}</h1></div>
+    </div>
+    <div class="rd-pills">
+      <div class="pill">⏱️ ${r.time}</div>
+      <div class="pill">🌡️ ${r.temp}</div>
+      <div class="pill">👤 ${r.serv}</div>
+      <div class="pill">🔥 ${r.cal}</div>
+      <div class="pill">📊 ${r.diff}</div>
+      ${r.tags.map(t=>`<div class="pill">${t}</div>`).join('')}
+    </div>
+    <div class="rd-intro">${r.desc}</div>
+    <div class="rd-cols">
+      <div class="ing-card">
+        <h3>🛒 Ingredientes</h3>
+        ${ings}
+        <div class="afil-note">🔗 Los enlaces de Amazon te llevan directamente al producto. Participante en el Programa de Afiliados de Amazon EU.</div>
+      </div>
+      <div class="steps-section">
+        <h3>👨‍🍳 Elaboración paso a paso</h3>
+        ${steps}
+      </div>
+    </div>
+    ${related.length ? `<div class="more-r">
+      <h3>Más recetas de la misma categoría</h3>
+      <p>Sigue cocinando con estas recetas similares.</p>
+      <div class="mini-g">${relHTML}</div>
+    </div>` : ''}
+  `;
+
+  document.getElementById('page-home').classList.remove('active');
+  document.getElementById('page-recipe').classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ─── INIT ────────────────────────────────────────────────────
+renderGrid();
+</script>
+</body>
+</html>
